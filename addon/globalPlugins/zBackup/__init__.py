@@ -31,9 +31,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 		if globalVars.appArgs.secure: return
 
+	# Translators: Description for name in input gesture window
 	@script(gesture=None, description= _("Mostrar ventana principal"), category= "zBackup")
 	def script_Run(self, gesture):
-		if config.isInstalledCopy() == True:
+		if config.isInstalledCopy():
 			if ajustes.IS_WinON == False:
 				if os.path.isfile(ajustes.dirSnapshot):
 					self.mainThread = HiloComplemento(1)
@@ -42,9 +43,11 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 					self.mainThread = HiloComplemento(2)
 					self.mainThread.start()
 			else:
-				ui.message("Ya hay una instancia de zBackup para NVDA abierta.")
+				# Translators: Message informing that a copy of the plug-in has already been opened
+				ui.message(_("Ya hay una instancia de zBackup para NVDA abierta."))
 		else:
-			ui.message("No se puede ejecutar zBackup en una copia portable de NVDA.")
+			# Translators: Message informing that it is not possible to run on a portable copy of NVDA
+			ui.message(_("No se puede ejecutar zBackup en una copia portable de NVDA."))
 
 class HiloComplemento(Thread):
 	def __init__(self, opcion):
@@ -61,8 +64,9 @@ class HiloComplemento(Thread):
 
 		def lanzaDescargaInicio():
 			ajustes.IS_WinON = True
+			# Translators: Message to inform about snapshot information and that it is to be downloaded
 			xguiMsg = \
-"""No se encontró Drive Snapshot.
+_("""No se encontró Drive Snapshot.
 
 Es necesario descargar la aplicación para poder usar el complemento.
 
@@ -74,8 +78,10 @@ Su peso es inferior a 500KB.
 
 Le recuerdo que la aplicación es de evaluación por 30 días, es recomendable ver la ayuda del complemento.
 
-¿Desea descargar la aplicación ahora para poder usar el complemento?""".format(ajustes.dirSnapshot)
-			msg = wx.MessageDialog(None, xguiMsg, "Pregunta", wx.YES_NO | wx.NO_DEFAULT | wx.ICON_QUESTION)
+¿Desea descargar la aplicación ahora para poder usar el complemento?""").format(ajustes.dirSnapshot)
+			msg = wx.MessageDialog(None, xguiMsg, 
+				# Translators: Title of the dialog box that will ask about snapshot downloading
+				_("Pregunta"), wx.YES_NO | wx.NO_DEFAULT | wx.ICON_QUESTION)
 			ret = msg.ShowModal()
 			if ret == wx.ID_YES:
 				msg.Destroy()
@@ -104,7 +110,8 @@ class DescargaDialogoInicio(wx.Dialog):
 		WIDTH = 550
 		HEIGHT = 400
 
-		super(DescargaDialogoInicio, self).__init__(None, -1, title="Descargando Drive Snapshot...", size = (WIDTH, HEIGHT))
+		# Translators: Snapshot download window title
+		super(DescargaDialogoInicio, self).__init__(None, -1, title=_("Descargando Drive Snapshot..."), size = (WIDTH, HEIGHT))
 
 		self.CenterOnScreen()
 
@@ -114,10 +121,12 @@ class DescargaDialogoInicio(wx.Dialog):
 		self.textorefresco = wx.TextCtrl(self.Panel, wx.ID_ANY, style =wx.TE_MULTILINE|wx.TE_READONLY)
 		self.textorefresco.Bind(wx.EVT_CONTEXT_MENU, self.skip)
 
+		# Translators: Accept button name
 		self.AceptarTRUE = wx.Button(self.Panel, ajustes.ID_TRUE, _("&Aceptar"))
 		self.Bind(wx.EVT_BUTTON, self.onAceptarTRUE, id=self.AceptarTRUE.GetId())
 		self.AceptarTRUE.Disable()
 
+		# Translators: Name of close button
 		self.AceptarFALSE = wx.Button(self.Panel, ajustes.ID_FALSE, _("&Cerrar"))
 		self.Bind(wx.EVT_BUTTON, self.onAceptarFALSE, id=self.AceptarFALSE.GetId())
 		self.AceptarFALSE.Disable()
@@ -236,7 +245,7 @@ class VentanaPrincipal(wx.Dialog):
 		super(VentanaPrincipal, self).__init__(parent, -1, size = (WIDTH, HEIGHT))
 
 		ajustes.IS_WinON = True
-		self.SetTitle("zBackup para NVDA")
+		self.SetTitle(_("zBackup para NVDA"))
 
 		self.directorioDestino = ""
 
@@ -244,7 +253,7 @@ class VentanaPrincipal(wx.Dialog):
 
 		sizer_1 = wx.BoxSizer(wx.VERTICAL)
 
-		label_1 = wx.StaticText(self.panel_1, wx.ID_ANY, "&Directorio destino:")
+		label_1 = wx.StaticText(self.panel_1, wx.ID_ANY, _("&Directorio destino:"))
 		sizer_1.Add(label_1, 0, wx.EXPAND, 0)
 
 		sizer_2 = wx.BoxSizer(wx.HORIZONTAL)
@@ -252,16 +261,16 @@ class VentanaPrincipal(wx.Dialog):
 
 		self.txtDirectorio = wx.TextCtrl(self.panel_1, wx.ID_ANY, "", style=wx.TE_MULTILINE | wx.TE_READONLY | wx.TE_NO_VSCROLL)
 		sizer_2.Add(self.txtDirectorio, 0, wx.EXPAND, 0)
-		self.directorioBTN = wx.Button(self.panel_1, wx.ID_ANY, "&Seleccionar directorio")
+		self.directorioBTN = wx.Button(self.panel_1, wx.ID_ANY, _("&Seleccionar directorio"))
 		sizer_2.Add(self.directorioBTN, 1, wx.ALL |wx.ALIGN_CENTER_VERTICAL, 0)
 
-		label_2 = wx.StaticText(self.panel_1, wx.ID_ANY, "&Nombre para la copia de seguridad")
+		label_2 = wx.StaticText(self.panel_1, wx.ID_ANY, _("&Nombre para la copia de seguridad"))
 		sizer_1.Add(label_2, 0, wx.EXPAND, 0)
 
 		self.txtNombre = wx.TextCtrl(self.panel_1, wx.ID_ANY, "")
 		sizer_1.Add(self.txtNombre, 0, wx.EXPAND, 0)
 
-		label_3 = wx.StaticText(self.panel_1, wx.ID_ANY, "Seleccione el &tamaño para los archivos de la copia:")
+		label_3 = wx.StaticText(self.panel_1, wx.ID_ANY, _("Seleccione el &tamaño para los archivos de la copia:"))
 		sizer_1.Add(label_3, 0, wx.EXPAND, 0)
 
 		self.listLenght = ["500 MB", "1 GB", "1.5 GB", "2 GB", "2.5 GB", "5 GB", "10 GB"]
@@ -272,10 +281,10 @@ class VentanaPrincipal(wx.Dialog):
 		sizer_3 = wx.BoxSizer(wx.HORIZONTAL)
 		sizer_1.Add(sizer_3, 1, wx.EXPAND, 0)
 
-		self.copiaBTN = wx.Button(self.panel_1, wx.ID_ANY, "&Iniciar la copia de seguridad")
+		self.copiaBTN = wx.Button(self.panel_1, wx.ID_ANY, _("&Iniciar la copia de seguridad"))
 		sizer_3.Add(self.copiaBTN, 2, wx.EXPAND / wx.CENTER, 0)
 
-		self.menuBTN = wx.Button(self.panel_1, wx.ID_ANY, u"&Menú")
+		self.menuBTN = wx.Button(self.panel_1, wx.ID_ANY, u_("&Menú"))
 		sizer_3.Add(self.menuBTN, 2, wx.CENTER, 0)
 
 		self.panel_1.SetSizer(sizer_1)
@@ -304,13 +313,13 @@ class VentanaPrincipal(wx.Dialog):
 
 	def menuBoton(self, event):
 		self.menu = wx.Menu()
-		item1 = self.menu.Append(1, "&Restaurar copia de seguridad")
+		item1 = self.menu.Append(1, _("&Restaurar copia de seguridad"))
 		self.menu.Bind(wx.EVT_MENU, self.onMenuAcciones)
-		item2 = self.menu.Append(2, "&Montar disco virtual de una copia de seguridad")
+		item2 = self.menu.Append(2, _("&Montar disco virtual de una copia de seguridad"))
 		self.menu.Bind(wx.EVT_MENU, self.onMenuAcciones)
-		item3 = self.menu.Append(3, "&Desmontar unidades virtuales")
+		item3 = self.menu.Append(3, _("&Desmontar unidades virtuales"))
 		self.menu.Bind(wx.EVT_MENU, self.onMenuAcciones)
-		item4 = self.menu.Append(4, "&Ejecutar la aplicación Drive Snapshot")
+		item4 = self.menu.Append(4, _("&Ejecutar la aplicación Drive Snapshot"))
 		self.menu.Bind(wx.EVT_MENU, self.onMenuAcciones)
 		self.menuBTN.PopupMenu(self.menu)
 
@@ -318,7 +327,7 @@ class VentanaPrincipal(wx.Dialog):
 		menuID = event.GetId()
 		if menuID == 1:
 			msg = \
-"""*** ADVERTENCIA ***
+_("""*** ADVERTENCIA ***
 
 A continuación se le va a pedir que elija un archivo *.sna que pertenece a una copia de seguridad.
 
@@ -338,22 +347,22 @@ Si lo desea y tiene alguna aplicación móvil de OCR puede ir mirando de captura
 
 Le recuerdo que el autor del complemento queda exento de cualquier problema que pueda causar una mala restauración.
 
-¿Desea continuar?"""
-			msg = wx.MessageDialog(None, msg, "Pregunta", wx.YES_NO | wx.NO_DEFAULT | wx.ICON_QUESTION)
+¿Desea continuar?""")
+			msg = wx.MessageDialog(None, msg, _("Pregunta"), wx.YES_NO | wx.NO_DEFAULT | wx.ICON_QUESTION)
 			ret = msg.ShowModal()
 			if ret == wx.ID_YES:
 				msg.Destroy()
-				wildcard = "Archivo copia de seguridad (*.sna)|*.sna"
-				dlgF = wx.FileDialog(None, message="Seleccione un archivo de copia de seguridad", defaultDir=os.getcwd(), defaultFile="", wildcard=wildcard, style=wx.FD_OPEN | wx.FD_CHANGE_DIR | wx.FD_FILE_MUST_EXIST | wx.FD_PREVIEW)
+				wildcard = _("Archivo copia de seguridad (*.sna)|*.sna")
+				dlgF = wx.FileDialog(None, message=_("Seleccione un archivo de copia de seguridad"), defaultDir=os.getcwd(), defaultFile="", wildcard=wildcard, style=wx.FD_OPEN | wx.FD_CHANGE_DIR | wx.FD_FILE_MUST_EXIST | wx.FD_PREVIEW)
 				if dlgF.ShowModal() == wx.ID_OK:
 					copiaFichero = dlgF.GetPath()
 					dlgF.Destroy()
 					if  ajustes.unidadSistema == copiaFichero[:2]:
 						msg = \
-"""No puede restaurar una copia de seguridad desde la partición de sistema.
+_("""No puede restaurar una copia de seguridad desde la partición de sistema.
 
-Mueva la copia de seguridad a otra partición o un medio externo."""
-						gui.messageBox(msg, "Error", wx.ICON_ERROR)
+Mueva la copia de seguridad a otra partición o un medio externo.""")
+						gui.messageBox(msg, _("Error"), wx.ICON_ERROR)
 						return
 					else:
 						HiloRestauracion(copiaFichero)
@@ -379,12 +388,12 @@ Mueva la copia de seguridad a otra partición o un medio externo."""
 
 		if menuID == 3:
 			msg = \
-"""Se va a proceder a desmontar todas las unidades virtuales.
+_("""Se va a proceder a desmontar todas las unidades virtuales.
 
 Se le pedirá permisos de Administrador para realizar la acción.
 
-¿Desea continuar?"""
-			msg = wx.MessageDialog(None, msg, "Pregunta", wx.YES_NO | wx.NO_DEFAULT | wx.ICON_QUESTION)
+¿Desea continuar?""")
+			msg = wx.MessageDialog(None, msg, _("Pregunta"), wx.YES_NO | wx.NO_DEFAULT | wx.ICON_QUESTION)
 			ret = msg.ShowModal()
 			if ret == wx.ID_YES:
 				msg.Destroy()
@@ -398,17 +407,17 @@ Se le pedirá permisos de Administrador para realizar la acción.
 			os.startfile(os.path.realpath(ajustes.dirSnapshot))
 
 	def onSeleccionarDirectorio(self, event):
-		dlg = wx.DirDialog(self, "Seleccione un directorio:",
+		dlg = wx.DirDialog(self, _("Seleccione un directorio:"),
 			style=wx.DD_DEFAULT_STYLE)
 		if dlg.ShowModal() == wx.ID_OK:
 			if  ajustes.unidadSistema == dlg.GetPath()[:2]:
 				msg = \
-"""No puede guardar la copia de seguridad en la ubicación que eligió.
+_("""No puede guardar la copia de seguridad en la ubicación que eligió.
 
 {}
 
-La copia de seguridad tiene que guardarse en una ubicación distinta a la partición de sistema ya sea otra partición u otro disco.""".format(dlg.GetPath())
-				gui.messageBox(msg, "Error", wx.ICON_ERROR)
+La copia de seguridad tiene que guardarse en una ubicación distinta a la partición de sistema ya sea otra partición u otro disco.""").format(dlg.GetPath())
+				gui.messageBox(msg, _("Error"), wx.ICON_ERROR)
 				self.txtDirectorio.Clear()
 				self.directorioDestino = ""
 			else:
@@ -416,7 +425,7 @@ La copia de seguridad tiene que guardarse en una ubicación distinta a la partic
 				total_dest, used_dst, free_dst = shutil.disk_usage(dlg.GetPath()[:3])
 				if free_dst < used_src:
 					msg = \
-"""La ubicación que eligió no tiene espacio suficiente para guardar la copia de seguridad.
+_("""La ubicación que eligió no tiene espacio suficiente para guardar la copia de seguridad.
 
 {}
 
@@ -427,8 +436,8 @@ Al hacer la copia de seguridad luego se comprime y queda la mitad aproximadament
 * Tamaño partición sistema: {}
 * Tamaño libre destino: {}
 
-Por favor elija otra ubicación con más espacio o si tiene copias de seguridad antiguas borre alguna.""".format(dlg.GetPath(), utilidades.humanbytes(used_src), utilidades.humanbytes(free_dst))
-					gui.messageBox(msg, "Error", wx.ICON_ERROR)
+Por favor elija otra ubicación con más espacio o si tiene copias de seguridad antiguas borre alguna.""").format(dlg.GetPath(), utilidades.humanbytes(used_src), utilidades.humanbytes(free_dst))
+					gui.messageBox(msg, _("Error"), wx.ICON_ERROR)
 					self.txtDirectorio.Clear()
 					self.directorioDestino = ""
 				else:
@@ -439,17 +448,17 @@ Por favor elija otra ubicación con más espacio o si tiene copias de seguridad 
 	def onIniciaCopia(self, event):
 		if self.txtDirectorio.GetValue() == "":
 			msg = \
-"""El campo del directorio está vacío.
+_("""El campo del directorio está vacío.
 
 Este campo es obligatorio ya que será donde se guarde la copia de seguridad.
 
-Seleccione un directorio para poder continuar."""
-			gui.messageBox(msg, "Error", wx.ICON_ERROR)
+Seleccione un directorio para poder continuar.""")
+			gui.messageBox(msg, _("Error"), wx.ICON_ERROR)
 			self.directorioBTN.SetFocus()
 		else:
 			if self.txtNombre.GetValue() == "":
 				msg = \
-"""El campo de nombre para la copia de seguridad  es obligatorio.
+_("""El campo de nombre para la copia de seguridad  es obligatorio.
 
 Dicho campo es necesario para crear el subdirectorio y la estructura de archivos en.
 
@@ -457,13 +466,13 @@ Dicho campo es necesario para crear el subdirectorio y la estructura de archivos
 
 Además este campo nos valdrá para identificar nuestra copia de seguridad.
 
-Introduzca un nombre para poder continuar.""".format(self.txtDirectorio.GetValue())
-				gui.messageBox(msg, "Error", wx.ICON_ERROR)
+Introduzca un nombre para poder continuar.""").format(self.txtDirectorio.GetValue())
+				gui.messageBox(msg, _("Error"), wx.ICON_ERROR)
 				self.txtNombre.SetFocus()
 			else:
 				if any(c in ' \/:*?"<>|' for c in self.txtNombre.GetValue()):
 					msg = \
-"""El nombre para la copia de seguridad contiene caracteres no permitidos.
+_("""El nombre para la copia de seguridad contiene caracteres no permitidos.
 
 Los siguientes caracteres no pueden ser usados, utilice una revisión virtual para verlos:
 
@@ -471,19 +480,19 @@ Los siguientes caracteres no pueden ser usados, utilice una revisión virtual pa
 
 Además por seguridad en las restauraciones se a omitido el poder poner espacios por lo que le recomiendo los sustituya por guiones o guiones bajos.
 
-Modifique el Nombre para la copia de seguridad para continuar."""
-					gui.messageBox(msg, "Error", wx.ICON_ERROR)
+Modifique el Nombre para la copia de seguridad para continuar.""")
+					gui.messageBox(msg, _("Error"), wx.ICON_ERROR)
 					self.txtNombre.SetFocus()
 				else:
 					msg = \
-"""A continuación se le solicitara permisos de Administrador para poder hacer la copia de seguridad.
+_("""A continuación se le solicitara permisos de Administrador para poder hacer la copia de seguridad.
 
 Una vez concedidos se abrirá una ventana con el progreso de la copia.
 
 Cuando el proceso termine se cerrara la ventana y le saldrá información si la copia fue exitosa o no.
 
-¿Desea empezar la copia de seguridad?"""
-					msg = wx.MessageDialog(None, msg, "Pregunta", wx.YES_NO | wx.NO_DEFAULT | wx.ICON_QUESTION)
+¿Desea empezar la copia de seguridad?""")
+					msg = wx.MessageDialog(None, msg, _("Pregunta"), wx.YES_NO | wx.NO_DEFAULT | wx.ICON_QUESTION)
 					ret = msg.ShowModal()
 					if ret == wx.ID_YES:
 						msg.Destroy()
@@ -516,7 +525,7 @@ class DialogoMontar(wx.Dialog):
 
 		super(DialogoMontar, self).__init__(None, -1, size = (WIDTH, HEIGHT))
 
-		self.SetTitle("Montar imagen de copia de seguridad como unidad virtual")
+		self.SetTitle(_("Montar imagen de copia de seguridad como unidad virtual"))
 		self.unidadSeleccionada = ""
 		self.ficheroSeleccion = ""
 
@@ -525,13 +534,13 @@ class DialogoMontar(wx.Dialog):
 		sizer_1 = wx.BoxSizer(wx.VERTICAL)
 
 		self.unidades = utilidades.unidadesLibres(":")
-		label_1 = wx.StaticText(self.panel_1, wx.ID_ANY, "Seleccione una &unidad de disco donde montar la imagen:")
+		label_1 = wx.StaticText(self.panel_1, wx.ID_ANY, _("Seleccione una &unidad de disco donde montar la imagen:"))
 		sizer_1.Add(label_1, 0, wx.EXPAND, 0)
 		self.choice = wx.Choice(self.panel_1, wx.ID_ANY, choices=["Elija unidad"]+self.unidades)
 		self.choice.SetSelection(0)
 		sizer_1.Add(self.choice, 0, wx.EXPAND, 0)
 
-		label_2 = wx.StaticText(self.panel_1, wx.ID_ANY, "Seleccione un archivo &de copia de seguridad:")
+		label_2 = wx.StaticText(self.panel_1, wx.ID_ANY, _("Seleccione un archivo &de copia de seguridad:"))
 		sizer_1.Add(label_2, 0, wx.EXPAND, 0)
 
 		sizer_2 = wx.BoxSizer(wx.HORIZONTAL)
@@ -539,16 +548,16 @@ class DialogoMontar(wx.Dialog):
 
 		self.txtFichero = wx.TextCtrl(self.panel_1, wx.ID_ANY, "", style=wx.TE_MULTILINE | wx.TE_READONLY | wx.TE_NO_VSCROLL)
 		sizer_2.Add(self.txtFichero, 1, wx.EXPAND, 0)
-		self.ficheroBTN = wx.Button(self.panel_1, wx.ID_ANY, "&Seleccionar copia de seguridad")
+		self.ficheroBTN = wx.Button(self.panel_1, wx.ID_ANY, _("&Seleccionar copia de seguridad"))
 		sizer_2.Add(self.ficheroBTN, 0, wx.ALL |wx.ALIGN_CENTER_VERTICAL, 0)
 
 		sizer_3 = wx.BoxSizer(wx.HORIZONTAL)
 		sizer_1.Add(sizer_3, 1, wx.EXPAND, 0)
 
-		self.aceptarBTN = wx.Button(self.panel_1, 1, "&Aceptar")
+		self.aceptarBTN = wx.Button(self.panel_1, 1, _("&Aceptar"))
 		sizer_3.Add(self.aceptarBTN, 2, wx.CENTER, 0)
 
-		self.cancelarBTN = wx.Button(self.panel_1, 2, "&Cancelar")
+		self.cancelarBTN = wx.Button(self.panel_1, 2, _("&Cancelar"))
 		sizer_3.Add(self.cancelarBTN, 2, wx.CENTER, 0)
 
 		self.panel_1.SetSizer(sizer_1)
@@ -577,18 +586,18 @@ class DialogoMontar(wx.Dialog):
 		if botonID == 1:
 			if self.choice.GetSelection() == 0:
 				msg = \
-"""Tiene que seleccionar una unidad para poder continuar"""
-				gui.messageBox(msg, "Error", wx.ICON_ERROR)
+_("""Tiene que seleccionar una unidad para poder continuar""")
+				gui.messageBox(msg, _("Error"), wx.ICON_ERROR)
 				self.choice.SetFocus()
 			else:
 				if self.txtFichero.GetValue() == "":
 					msg = \
-"""El campo del fichero de copia de seguridad está vacío.
+_("""El campo del fichero de copia de seguridad está vacío.
 
 Este campo es obligatorio ya que es necesario tener la ruta de una copia de seguridad para montar.
 
-Seleccione un fichero para poder continuar."""
-					gui.messageBox(msg, "Error", wx.ICON_ERROR)
+Seleccione un fichero para poder continuar.""")
+					gui.messageBox(msg, _("Error"), wx.ICON_ERROR)
 					self.ficheroBTN.SetFocus()
 				else:
 					if self.IsModal():
@@ -602,8 +611,8 @@ Seleccione un fichero para poder continuar."""
 				self.Close()
 
 	def onSeleccionarFichero(self, event):
-		wildcard = "Archivo copia de seguridad (*.sna)|*.sna"
-		dlgF = wx.FileDialog(None, message="Seleccione un archivo de copia de seguridad", defaultDir=os.getcwd(), defaultFile="", wildcard=wildcard, style=wx.FD_OPEN | wx.FD_CHANGE_DIR | wx.FD_FILE_MUST_EXIST | wx.FD_PREVIEW)
+		wildcard = _("Archivo copia de seguridad (*.sna)|*.sna")
+		dlgF = wx.FileDialog(None, message=_("Seleccione un archivo de copia de seguridad"), defaultDir=os.getcwd(), defaultFile="", wildcard=wildcard, style=wx.FD_OPEN | wx.FD_CHANGE_DIR | wx.FD_FILE_MUST_EXIST | wx.FD_PREVIEW)
 		if dlgF.ShowModal() == wx.ID_OK:
 			self.ficheroSeleccion = dlgF.GetPath()
 			self.txtFichero.SetValue(os.path.basename(self.ficheroSeleccion))
@@ -642,12 +651,12 @@ class HiloCopia(Thread):
 				cmdOutput.append(line)
 		if proc.returncode == 0:
 			msg = \
-"""Se completo la copia de seguridad correctamente en la ubicación:
+_("""Se completo la copia de seguridad correctamente en la ubicación:
 
 {}
 
-Le aconsejo guarde correctamente dicho directorio por si necesitara restaurar.""".format(os.path.join(self.opciones[0], self.opciones[1]))
-			gui.messageBox(msg,"Información", wx.ICON_INFORMATION)
+Le aconsejo guarde correctamente dicho directorio por si necesitara restaurar.""").format(os.path.join(self.opciones[0], self.opciones[1]))
+			gui.messageBox(msg,_("Información"), wx.ICON_INFORMATION)
 		else:
 			try:
 				shutil.rmtree(os.path.join(self.opciones[0], self.opciones[1]), ignore_errors=True)
@@ -656,21 +665,21 @@ Le aconsejo guarde correctamente dicho directorio por si necesitara restaurar.""
 
 			winsound.MessageBeep(16)
 			msg = \
-"""Algo salió mal. Al usar una aplicación externa no puedo dar más información del error.
+_("""Algo salió mal. Al usar una aplicación externa no puedo dar más información del error.
 
 Pero se guardo un log para que pueda revisarlo.
 
-¿Desea ver el log de error?"""
-			msg = wx.MessageDialog(None, msg, "Pregunta", wx.YES_NO | wx.NO_DEFAULT | wx.ICON_QUESTION)
+¿Desea ver el log de error?""")
+			msg = wx.MessageDialog(None, msg, _("Pregunta"), wx.YES_NO | wx.NO_DEFAULT | wx.ICON_QUESTION)
 			ret = msg.ShowModal()
 			if ret == wx.ID_YES:
 				msg.Destroy()
 				try:
 					with open(ajustes.ficheroLog, 'r') as f:
 						txt = "".join(line for line in f if not line.isspace())
-					ui.browseableMessage(txt, "Log de error")
+					ui.browseableMessage(txt, _("Log de error"))
 				except:
-					ui.browseableMessage(''.join(str(e) for e in cmdOutput), "Log de error")
+					ui.browseableMessage(''.join(str(e) for e in cmdOutput), _("Log de error"))
 			else:
 				msg.Destroy()
 
@@ -702,16 +711,16 @@ class HiloRestauracion(Thread):
 		else:
 			winsound.MessageBeep(16)
 			msg = \
-"""Algo salió mal. Al usar una aplicación externa no puedo dar más información del error.
+_("""Algo salió mal. Al usar una aplicación externa no puedo dar más información del error.
 
 Pero se guardo un log para que pueda revisarlo.
 
-¿Desea ver el log de error?"""
-			msg = wx.MessageDialog(None, msg, "Pregunta", wx.YES_NO | wx.NO_DEFAULT | wx.ICON_QUESTION)
+¿Desea ver el log de error?""")
+			msg = wx.MessageDialog(None, msg, _("Pregunta"), wx.YES_NO | wx.NO_DEFAULT | wx.ICON_QUESTION)
 			ret = msg.ShowModal()
 			if ret == wx.ID_YES:
 				msg.Destroy()
-				ui.browseableMessage(''.join(str(e) for e in cmdOutput), "Log de error")
+				ui.browseableMessage(''.join(str(e) for e in cmdOutput), _("Log de error"))
 			else:
 				msg.Destroy()
 
@@ -735,10 +744,10 @@ class HiloMontar(Thread):
 				cmdOutput.append(line)
 		if proc.returncode == 0:
 			msg = \
-"""Se monto correctamente la imagen.
+_("""Se monto correctamente la imagen.
 
-¿Desea abrir el explorador de archivos en la raíz de la unidad {}?""".format(self.opciones[0])
-			msg = wx.MessageDialog(None, msg, "Pregunta", wx.YES_NO | wx.NO_DEFAULT | wx.ICON_QUESTION)
+¿Desea abrir el explorador de archivos en la raíz de la unidad {}?""").format(self.opciones[0])
+			msg = wx.MessageDialog(None, msg, _("Pregunta"), wx.YES_NO | wx.NO_DEFAULT | wx.ICON_QUESTION)
 			ret = msg.ShowModal()
 			if ret == wx.ID_YES:
 				msg.Destroy()
@@ -749,16 +758,16 @@ class HiloMontar(Thread):
 		else:
 			winsound.MessageBeep(16)
 			msg = \
-"""Algo salió mal. Al usar una aplicación externa no puedo dar más información del error.
+_("""Algo salió mal. Al usar una aplicación externa no puedo dar más información del error.
 
 Pero se guardo un log para que pueda revisarlo.
 
-¿Desea ver el log de error?"""
-			msg = wx.MessageDialog(None, msg, "Pregunta", wx.YES_NO | wx.NO_DEFAULT | wx.ICON_QUESTION)
+¿Desea ver el log de error?""")
+			msg = wx.MessageDialog(None, msg, _("Pregunta"), wx.YES_NO | wx.NO_DEFAULT | wx.ICON_QUESTION)
 			ret = msg.ShowModal()
 			if ret == wx.ID_YES:
 				msg.Destroy()
-				ui.browseableMessage(''.join(str(e) for e in cmdOutput), "Log de error")
+				ui.browseableMessage(''.join(str(e) for e in cmdOutput), _("Log de error"))
 			else:
 				msg.Destroy()
 
@@ -781,21 +790,21 @@ class HiloDesmontar(Thread):
 				cmdOutput.append(line)
 		if proc.returncode == 0:
 			msg = \
-"""Se desmontaron correctamente todas las imágenes."""
-			gui.messageBox(msg,"Información", wx.ICON_INFORMATION)
+_("""Se desmontaron correctamente todas las imágenes.""")
+			gui.messageBox(msg,_("Información"), wx.ICON_INFORMATION)
 		else:
 			winsound.MessageBeep(16)
 			msg = \
-"""Algo salió mal. Al usar una aplicación externa no puedo dar más información del error.
+_("""Algo salió mal. Al usar una aplicación externa no puedo dar más información del error.
 
 Pero se guardo un log para que pueda revisarlo.
 
-¿Desea ver el log de error?"""
-			msg = wx.MessageDialog(None, msg, "Pregunta", wx.YES_NO | wx.NO_DEFAULT | wx.ICON_QUESTION)
+¿Desea ver el log de error?""")
+			msg = wx.MessageDialog(None, msg, _("Pregunta"), wx.YES_NO | wx.NO_DEFAULT | wx.ICON_QUESTION)
 			ret = msg.ShowModal()
 			if ret == wx.ID_YES:
 				msg.Destroy()
-				ui.browseableMessage(''.join(str(e) for e in cmdOutput), "Log de error")
+				ui.browseableMessage(''.join(str(e) for e in cmdOutput), _("Log de error"))
 			else:
 				msg.Destroy()
 
