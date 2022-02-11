@@ -284,7 +284,7 @@ class VentanaPrincipal(wx.Dialog):
 		self.copiaBTN = wx.Button(self.panel_1, wx.ID_ANY, _("&Iniciar la copia de seguridad"))
 		sizer_3.Add(self.copiaBTN, 2, wx.EXPAND / wx.CENTER, 0)
 
-		self.menuBTN = wx.Button(self.panel_1, wx.ID_ANY, u_("&Menú"))
+		self.menuBTN = wx.Button(self.panel_1, wx.ID_ANY, _("&Menú"))
 		sizer_3.Add(self.menuBTN, 2, wx.CENTER, 0)
 
 		self.panel_1.SetSizer(sizer_1)
@@ -416,7 +416,7 @@ _("""No puede guardar la copia de seguridad en la ubicación que eligió.
 
 {}
 
-La copia de seguridad tiene que guardarse en una ubicación distinta a la partición de sistema ya sea otra partición u otro disco.""").format(dlg.GetPath())
+La copia de seguridad tiene que guardarse en una ubicación distinta a la partición de sistema ya sea otra partición u otro disco.""").format(dlg.GetPath())
 				gui.messageBox(msg, _("Error"), wx.ICON_ERROR)
 				self.txtDirectorio.Clear()
 				self.directorioDestino = ""
@@ -453,7 +453,7 @@ _("""El campo del directorio está vacío.
 Este campo es obligatorio ya que será donde se guarde la copia de seguridad.
 
 Seleccione un directorio para poder continuar.""")
-			gui.messageBox(msg, _("Error"), wx.ICON_ERROR)
+			gui.messageBox(msg, _("Error"), wx.ICON_ERROR)
 			self.directorioBTN.SetFocus()
 		else:
 			if self.txtNombre.GetValue() == "":
