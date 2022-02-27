@@ -1,0 +1,531 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: zYedekleme 0.1\n"
+"Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
+"POT-Creation-Date: 2022-02-11 21:42+0100\n"
+"PO-Revision-Date: 2022-02-27 14:24+0300\n"
+"Last-Translator: Umut KORKMAZ <umutkork@gmail.com>\n"
+"Language-Team: Umut KORKMAZ <umutkork@gmail.com>\n"
+"Language: tr_TR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on
+#. to be shown on installation and add-on information found in Add-ons Manager.
+#: buildVars.py:23 addon\globalPlugins\zBackup\__init__.py:248
+msgid "zBackup para NVDA"
+msgstr "NVDA için zYedekleme"
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+#: buildVars.py:26
+msgid "Hacer y restaurar copias de seguridad de la partición Windows"
+msgstr "Windows bölümünü yedekleyin ve geri yükleyin"
+
+#. Translators: Description for name in input gesture window
+#: addon\globalPlugins\zBackup\__init__.py:35
+msgid "Mostrar ventana principal"
+msgstr "ana pencereyi göster"
+
+#. Translators: Message informing that a copy of the plug-in has already been opened
+#: addon\globalPlugins\zBackup\__init__.py:47
+msgid "Ya hay una instancia de zBackup para NVDA abierta."
+msgstr "NVDA için zYedekleme penceresi zaten açık."
+
+#. Translators: Message informing that it is not possible to run on a portable copy of NVDA
+#: addon\globalPlugins\zBackup\__init__.py:50
+msgid "No se puede ejecutar zBackup en una copia portable de NVDA."
+msgstr "NVDA taşınabilir sürümünde zYedekleme eklentisini çalıştıramazsınız."
+
+#. Translators: Message to inform about snapshot information and that it is to be downloaded
+#: addon\globalPlugins\zBackup\__init__.py:69
+msgid ""
+"No se encontró Drive Snapshot.\n"
+"\n"
+"Es necesario descargar la aplicación para poder usar el complemento.\n"
+"\n"
+"La aplicación es portable y se guardara en el directorio del complemento:\n"
+"\n"
+"{}\n"
+"\n"
+"Su peso es inferior a 500KB.\n"
+"\n"
+"Le recuerdo que la aplicación es de evaluación por 30 días, es recomendable "
+"ver la ayuda del complemento.\n"
+"\n"
+"¿Desea descargar la aplicación ahora para poder usar el complemento?"
+msgstr ""
+"Drive SnapShot uygulaması bulunamadı.\n"
+"\n"
+"Eklentiyi kullanabilmek için uygulamayı indirmeniz gerekiyor.\n"
+"\n"
+"Uygulama taşınabilirdir ve eklenti dizinine kaydedilecektir:\n"
+"\n"
+"{}\n"
+"\n"
+"Boyutu 500 KB'den azdır.\n"
+"\n"
+"Uygulamanın 30 gün boyunca deneme sürümü olarak kullanılabildiğini belirtmek "
+"isteriz. Eklentinin yardım belgelerine bakmanız önerilir.\n"
+"\n"
+"Eklentiyi kullanabilmek için uygulamayı şimdi indirmek istiyor musunuz?"
+
+#. Translators: Title of the dialog box that will ask about snapshot downloading
+#: addon\globalPlugins\zBackup\__init__.py:84
+#: addon\globalPlugins\zBackup\__init__.py:351
+#: addon\globalPlugins\zBackup\__init__.py:396
+#: addon\globalPlugins\zBackup\__init__.py:495
+#: addon\globalPlugins\zBackup\__init__.py:673
+#: addon\globalPlugins\zBackup\__init__.py:719
+#: addon\globalPlugins\zBackup\__init__.py:750
+#: addon\globalPlugins\zBackup\__init__.py:766
+#: addon\globalPlugins\zBackup\__init__.py:803
+msgid "Pregunta"
+msgstr "Uyarı"
+
+#. Translators: Snapshot download window title
+#: addon\globalPlugins\zBackup\__init__.py:114
+msgid "Descargando Drive Snapshot..."
+msgstr "Drive Snapshot uygulaması indiriliyor..."
+
+#. Translators: Accept button name
+#: addon\globalPlugins\zBackup\__init__.py:125
+#: addon\globalPlugins\zBackup\__init__.py:557
+msgid "&Aceptar"
+msgstr "Ka&bul"
+
+#. Translators: Name of close button
+#: addon\globalPlugins\zBackup\__init__.py:130
+msgid "&Cerrar"
+msgstr "&Kapat"
+
+#. Si la descarga es solo el tamaño
+#: addon\globalPlugins\zBackup\__init__.py:214
+#: addon\globalPlugins\zBackup\__init__.py:218
+msgid "Espere por favor...\n"
+msgstr "Lütfen bekleyin...\n"
+
+#: addon\globalPlugins\zBackup\__init__.py:214
+#: addon\globalPlugins\zBackup\__init__.py:218
+#, python-format
+msgid "Descargando: %s"
+msgstr "İndiriliyor: %s"
+
+#: addon\globalPlugins\zBackup\__init__.py:230
+msgid "La descarga se completó.\n"
+msgstr "İndirme tamamlandı.\n"
+
+#: addon\globalPlugins\zBackup\__init__.py:230
+#: addon\globalPlugins\zBackup\__init__.py:232
+msgid "Ya puede cerrar esta ventana."
+msgstr "Artık bu pencereyi kapatabilirsiniz."
+
+#: addon\globalPlugins\zBackup\__init__.py:232
+msgid "Algo salió mal.\n"
+msgstr "Bir sorun oluştu.\n"
+
+#: addon\globalPlugins\zBackup\__init__.py:232
+msgid "Compruebe que tiene conexión a internet y vuelva a intentarlo.\n"
+msgstr "İnternet bağlantınız olup olmadığını kontrol edin ve tekrar deneyin.\n"
+
+#: addon\globalPlugins\zBackup\__init__.py:256
+msgid "&Directorio destino:"
+msgstr "Hedef &dizin:"
+
+#: addon\globalPlugins\zBackup\__init__.py:264
+msgid "&Seleccionar directorio"
+msgstr "dizin &seç"
+
+#: addon\globalPlugins\zBackup\__init__.py:267
+msgid "&Nombre para la copia de seguridad"
+msgstr "Yedekleme dosya adı&nı girin"
+
+#: addon\globalPlugins\zBackup\__init__.py:273
+msgid "Seleccione el &tamaño para los archivos de la copia:"
+msgstr "Yedekleme dosyaları için boyu&t seçin:"
+
+#: addon\globalPlugins\zBackup\__init__.py:284
+msgid "&Iniciar la copia de seguridad"
+msgstr "yedeklemey&i başlat"
+
+#: addon\globalPlugins\zBackup\__init__.py:287
+msgid "&Menú"
+msgstr "&Menü"
+
+#: addon\globalPlugins\zBackup\__init__.py:316
+msgid "&Restaurar copia de seguridad"
+msgstr "yedeklemeyi ge&ri yükle"
+
+#: addon\globalPlugins\zBackup\__init__.py:318
+msgid "&Montar disco virtual de una copia de seguridad"
+msgstr "Bir yedekte&n sanal diski bağla"
+
+#: addon\globalPlugins\zBackup\__init__.py:320
+msgid "&Desmontar unidades virtuales"
+msgstr "Sanal sürücülerin bağlant&ısını kes"
+
+#: addon\globalPlugins\zBackup\__init__.py:322
+msgid "&Ejecutar la aplicación Drive Snapshot"
+msgstr "&Drive Snapshot uygulamasını Çalıştır"
+
+#: addon\globalPlugins\zBackup\__init__.py:330
+msgid ""
+"*** ADVERTENCIA ***\n"
+"\n"
+"A continuación se le va a pedir que elija un archivo *.sna que pertenece a "
+"una copia de seguridad.\n"
+"\n"
+"Cuando lo seleccione se le pedirá permisos de administrador, el ordenador se "
+"reiniciara y se restaurara la copia de seguridad.\n"
+"\n"
+"Después de pedirle permisos de Administrador quedara una ventana de consola "
+"la cual cuando presionemos cualquier tecla se reiniciara y dará comienzo la "
+"copia de seguridad.\n"
+"\n"
+"Es conveniente que tenga todas las aplicaciones cerradas o cuando Windows se "
+"lo solicite le diga finalizar todo.\n"
+"\n"
+"Tenga en cuenta que el proceso no puede cancelarse y si acepta debe mantener "
+"el ordenador con batería suficiente, mejor enchufado a la corriente "
+"eléctrica y esperar a que Windows se reinicie ya con la copia restaurada.\n"
+"\n"
+"Es conveniente tener en la pantalla de inicio de Windows activado el lector "
+"de pantalla para que nos avise que inicio.\n"
+"\n"
+"La acción que transcurre entre el reinicio siguiente y el inicio de Windows "
+"no es accesible, pero no tiene que interactuar para nada con el ordenador.\n"
+"\n"
+"Si lo desea y tiene alguna aplicación móvil de OCR puede ir mirando de "
+"capturar alguna información que le indique el porcentaje de la restauración, "
+"sobre la esquina inferior derecha suele aparecer el porcentaje que lleva "
+"restaurado.\n"
+"\n"
+"Le recuerdo que el autor del complemento queda exento de cualquier problema "
+"que pueda causar una mala restauración.\n"
+"\n"
+"¿Desea continuar?"
+msgstr ""
+"*** UYARI ***\n"
+"\n"
+"Daha sonra bir yedeklemeye ait olan bir *.sna dosyası seçmeniz "
+"istenecektir.\n"
+"\n"
+"Dosyayı seçtiğinizde, yönetici izinleri istenecek, bilgisayar yeniden "
+"başlatılacak ve yedekleme geri yüklenecektir.\n"
+"\n"
+"Yönetici izinleri verildikten sonra, herhangi bir tuşa bastığımızda yeniden "
+"başlatılacak ve yedeklemeyi başlatacak bir konsol penceresi kalacaktır.\n"
+"\n"
+"Açık olan bütün belge ve uygulamaları kapatmanız gerekir.\n"
+"\n"
+"Kabul ederseniz, işlemin geri alınamayacağını bilmeniz gerekir. "
+"Bilgisayarınızın pilinin tam dolu olduğundan veya imkan varsa prize bağlı "
+"olduğundan emin olun.\n"
+"\n"
+"\n"
+"Eğer ekran okuyucu ayarları yapılandırılmışsa, oturum açma ekranında bizi "
+"bilgilendirecektir.\n"
+"\n"
+"Bir sonraki yeniden başlatma ile Windows'un başlangıcı arasındaki eyleme "
+"erişilemez. Ancak bilgisayarla hiçbir şekilde etkileşime girmeniz gerekmez.\n"
+"\n"
+"Dilerseniz ve bir OCR mobil uygulamanız varsa, geri yükleme yüzdesini "
+"gösteren bazı bilgileri yakalamayı deneyebilirsiniz, geri yüklenen yüzde "
+"genellikle sağ alt köşede görünür.\n"
+"\n"
+"Herhangi bir sorun karşısında eklenti geliştiricisi sorumlu değildir.\n"
+"\n"
+"devam etmek istiyor musunuz?"
+
+#: addon\globalPlugins\zBackup\__init__.py:355
+#: addon\globalPlugins\zBackup\__init__.py:614
+msgid "Archivo copia de seguridad (*.sna)|*.sna"
+msgstr "Yedekleme Dosyası (*.sna)|*.sna"
+
+#: addon\globalPlugins\zBackup\__init__.py:356
+#: addon\globalPlugins\zBackup\__init__.py:615
+msgid "Seleccione un archivo de copia de seguridad"
+msgstr "Bir yedekleme dosyası seçin"
+
+#: addon\globalPlugins\zBackup\__init__.py:362
+msgid ""
+"No puede restaurar una copia de seguridad desde la partición de sistema.\n"
+"\n"
+"Mueva la copia de seguridad a otra partición o un medio externo."
+msgstr ""
+"Sisteminizin kurulu olduğu sürücüden yedeği geri yükleyemezsiniz.\n"
+"\n"
+"Yedek dosyalarını başka bir bölüme veya harici ortama taşıyın."
+
+#: addon\globalPlugins\zBackup\__init__.py:365
+#: addon\globalPlugins\zBackup\__init__.py:420
+#: addon\globalPlugins\zBackup\__init__.py:440
+#: addon\globalPlugins\zBackup\__init__.py:456
+#: addon\globalPlugins\zBackup\__init__.py:470
+#: addon\globalPlugins\zBackup\__init__.py:484
+#: addon\globalPlugins\zBackup\__init__.py:590
+#: addon\globalPlugins\zBackup\__init__.py:600
+msgid "Error"
+msgstr "Hata"
+
+#: addon\globalPlugins\zBackup\__init__.py:391
+msgid ""
+"Se va a proceder a desmontar todas las unidades virtuales.\n"
+"\n"
+"Se le pedirá permisos de Administrador para realizar la acción.\n"
+"\n"
+"¿Desea continuar?"
+msgstr ""
+"Tüm sanal sürücüler kaldırılacak.\n"
+"\n"
+"Eylemi gerçekleştirmek için Yönetici izni gerekir.\n"
+"\n"
+"devam etmek istiyor musunuz?"
+
+#: addon\globalPlugins\zBackup\__init__.py:410
+msgid "Seleccione un directorio:"
+msgstr "Bir dizin seçin:"
+
+#: addon\globalPlugins\zBackup\__init__.py:415
+msgid ""
+"No puede guardar la copia de seguridad en la ubicación que eligió.\n"
+"\n"
+"{}\n"
+"\n"
+"La copia de seguridad tiene que guardarse en una ubicación distinta a la "
+"partición de sistema ya sea otra partición u otro disco."
+msgstr ""
+"Yedekleme dosyasını seçtiğiniz konuma kaydedemezsiniz.\n"
+"\n"
+"{}\n"
+"\n"
+"Yedekleme dosyasının, sistem bölümünden farklı bir konuma, başka bir bölüme "
+"veya başka bir diske kaydedilmesi gerekir."
+
+#: addon\globalPlugins\zBackup\__init__.py:428
+msgid ""
+"La ubicación que eligió no tiene espacio suficiente para guardar la copia de "
+"seguridad.\n"
+"\n"
+"{}\n"
+"\n"
+"La comprobación del tamaño se hace del total de la partición de sistema.\n"
+"\n"
+"Al hacer la copia de seguridad luego se comprime y queda la mitad "
+"aproximadamente, pero es necesario reservar el tamaño original para "
+"imprevistos de compresión.\n"
+"\n"
+"* Tamaño partición sistema: {}\n"
+"* Tamaño libre destino: {}\n"
+"\n"
+"Por favor elija otra ubicación con más espacio o si tiene copias de "
+"seguridad antiguas borre alguna."
+msgstr ""
+"Seçtiğiniz konum, yedeklemeyi kaydetmek için yeterli boş alana sahip değil.\n"
+"\n"
+"{}\n"
+"\n"
+"Boyut kontrolü, toplam sistem bölümünden yapılır.\n"
+"\n"
+"Yedekleme yapılırken sıkıştırılır ve yaklaşık yarı boyuta düşürülür, ancak "
+"öngörülemeyen sıkıştırma için orijinal boyutu ayırmak gerekir.\n"
+"\n"
+"* Sistem bölümü boyutu: {}\n"
+"* Hedef Boş alan: {}\n"
+"\n"
+"Lütfen daha fazla boş alana sahip başka bir konum seçin veya eski "
+"yedekleriniz varsa bazılarını silin."
+
+#: addon\globalPlugins\zBackup\__init__.py:451
+msgid ""
+"El campo del directorio está vacío.\n"
+"\n"
+"Este campo es obligatorio ya que será donde se guarde la copia de "
+"seguridad.\n"
+"\n"
+"Seleccione un directorio para poder continuar."
+msgstr ""
+"Dizin alanı boş.\n"
+"\n"
+"Yedekleme dosyasının kaydedileceği yer belirtilmelidir.\n"
+"\n"
+"Lütfen devam etmek için bir dizin seçin."
+
+#: addon\globalPlugins\zBackup\__init__.py:461
+msgid ""
+"El campo de nombre para la copia de seguridad  es obligatorio.\n"
+"\n"
+"Dicho campo es necesario para crear el subdirectorio y la estructura de "
+"archivos en.\n"
+"\n"
+"{}\n"
+"\n"
+"Además este campo nos valdrá para identificar nuestra copia de seguridad.\n"
+"\n"
+"Introduzca un nombre para poder continuar."
+msgstr ""
+"Yedekleme dosyası için ad alanı boş bırakılamaz.\n"
+"\n"
+"Bu alan, içinde alt dizin ve dosya yapısı oluşturmak için gereklidir.\n"
+"\n"
+"{}\n"
+"\n"
+"Ayrıca bu alan yedeğimizi tanımlamamıza yardımcı olacaktır.\n"
+"\n"
+"Devam edebilmek için bir ad girin."
+
+#: addon\globalPlugins\zBackup\__init__.py:475
+msgid ""
+"El nombre para la copia de seguridad contiene caracteres no permitidos.\n"
+"\n"
+"Los siguientes caracteres no pueden ser usados, utilice una revisión virtual "
+"para verlos:\n"
+"\n"
+"\\ / : * ? \" < > |\n"
+"\n"
+"Además por seguridad en las restauraciones se a omitido el poder poner "
+"espacios por lo que le recomiendo los sustituya por guiones o guiones "
+"bajos.\n"
+"\n"
+"Modifique el Nombre para la copia de seguridad para continuar."
+msgstr ""
+"Yedekleme adı geçersiz karakterler içeriyor.\n"
+"\n"
+"Aşağıdaki karakterler kullanılamaz, onları görmek için sanal bir inceleme "
+"kullanın:\n"
+"\n"
+"\\ / : * ? \" < > |\n"
+"\n"
+"Ayrıca geri yüklemelerde güvenlik için boşluk koyma yetkisi kaldırılmış o "
+"yüzden bunları tire veya altçizgi ile değiştirmenizi tavsiye ederiz.\n"
+"\n"
+"Devam etmek için yedekleme dosyasının Adını değiştirin."
+
+#: addon\globalPlugins\zBackup\__init__.py:488
+msgid ""
+"A continuación se le solicitara permisos de Administrador para poder hacer "
+"la copia de seguridad.\n"
+"\n"
+"Una vez concedidos se abrirá una ventana con el progreso de la copia.\n"
+"\n"
+"Cuando el proceso termine se cerrara la ventana y le saldrá información si "
+"la copia fue exitosa o no.\n"
+"\n"
+"¿Desea empezar la copia de seguridad?"
+msgstr ""
+"Ardından, yedeklemeyi yapabilmek için Yönetici izinleri istenecektir.\n"
+"\n"
+"Yönetici izni verildikten sonra, kopyanın ilerleyişini gösteren bir pencere "
+"açılacaktır.\n"
+"\n"
+"İşlem bittiğinde pencere kapanacak ve kopyalamanın başarılı olup olmadığı "
+"hakkında bilgi alacaksınız.\n"
+"\n"
+"Yedeklemeyi başlatmak istiyor musunuz?"
+
+#: addon\globalPlugins\zBackup\__init__.py:528
+msgid "Montar imagen de copia de seguridad como unidad virtual"
+msgstr "Yedekleme görüntü dosyasını sanal sürücü olarak bağlayın"
+
+#: addon\globalPlugins\zBackup\__init__.py:537
+msgid "Seleccione una &unidad de disco donde montar la imagen:"
+msgstr "Görüntü dosyasını bağlamak için bir s&ürücü seçin:"
+
+#: addon\globalPlugins\zBackup\__init__.py:543
+msgid "Seleccione un archivo &de copia de seguridad:"
+msgstr "Bir yedekleme &dosyası seçin:"
+
+#: addon\globalPlugins\zBackup\__init__.py:551
+msgid "&Seleccionar copia de seguridad"
+msgstr "Yedekleme dosyasını &Seçin"
+
+#: addon\globalPlugins\zBackup\__init__.py:560
+msgid "&Cancelar"
+msgstr "İpta&l"
+
+#: addon\globalPlugins\zBackup\__init__.py:589
+msgid "Tiene que seleccionar una unidad para poder continuar"
+msgstr "Devam edebilmek için bir sürücü seçmelisiniz"
+
+#: addon\globalPlugins\zBackup\__init__.py:595
+msgid ""
+"El campo del fichero de copia de seguridad está vacío.\n"
+"\n"
+"Este campo es obligatorio ya que es necesario tener la ruta de una copia de "
+"seguridad para montar.\n"
+"\n"
+"Seleccione un fichero para poder continuar."
+msgstr ""
+"Yedeklemenizin bulunduğu bir dosya seçin.\n"
+"\n"
+"Bu alan boş bırakılamaz.\n"
+"\n"
+"Devam edebilmek için bir dosya seçin."
+
+#: addon\globalPlugins\zBackup\__init__.py:654
+msgid ""
+"Se completo la copia de seguridad correctamente en la ubicación:\n"
+"\n"
+"{}\n"
+"\n"
+"Le aconsejo guarde correctamente dicho directorio por si necesitara "
+"restaurar."
+msgstr ""
+"Yedekleme şu konumda başarıyla tamamlandı:\n"
+"\n"
+"{}\n"
+"\n"
+"Geri yüklemeniz gerektiğinde kullanabilmek için, bu dizini güvenilir bir "
+"yere kaydediniz."
+
+#: addon\globalPlugins\zBackup\__init__.py:659
+#: addon\globalPlugins\zBackup\__init__.py:794
+msgid "Información"
+msgstr "Bilgi"
+
+#: addon\globalPlugins\zBackup\__init__.py:668
+#: addon\globalPlugins\zBackup\__init__.py:714
+#: addon\globalPlugins\zBackup\__init__.py:761
+#: addon\globalPlugins\zBackup\__init__.py:798
+msgid ""
+"Algo salió mal. Al usar una aplicación externa no puedo dar más información "
+"del error.\n"
+"\n"
+"Pero se guardo un log para que pueda revisarlo.\n"
+"\n"
+"¿Desea ver el log de error?"
+msgstr ""
+"Bir sorun algılandı. Harici bir uygulama kullanıldığı için ayrıntılı bilgiye "
+"ulaşılamıyor.\n"
+"\n"
+"Ancak gözden geçirebilmeniz için bir Hata günlüğü dosysı oluşturuldu.\n"
+"\n"
+"Hata günlüğünü görmek istiyor musunuz?"
+
+#: addon\globalPlugins\zBackup\__init__.py:680
+#: addon\globalPlugins\zBackup\__init__.py:682
+#: addon\globalPlugins\zBackup\__init__.py:723
+#: addon\globalPlugins\zBackup\__init__.py:770
+#: addon\globalPlugins\zBackup\__init__.py:807
+msgid "Log de error"
+msgstr "Hata Günlüğü"
+
+#: addon\globalPlugins\zBackup\__init__.py:747
+msgid ""
+"Se monto correctamente la imagen.\n"
+"\n"
+"¿Desea abrir el explorador de archivos en la raíz de la unidad {}?"
+msgstr ""
+"Sanal sürücü doğru bir şekilde bağlandı.\n"
+"\n"
+"{} sürücüsünün kökünde dosya gezgini açmak istiyor musunuz?"
+
+#: addon\globalPlugins\zBackup\__init__.py:793
+msgid "Se desmontaron correctamente todas las imágenes."
+msgstr "Tüm sürücülerin bağlantısı başarıyla kaldırıldı."
