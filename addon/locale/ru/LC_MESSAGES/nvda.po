@@ -1,0 +1,500 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ZBackup\n"
+"POT-Creation-Date: 2022-04-27 20:26+0300\n"
+"PO-Revision-Date: 2022-04-27 21:03+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-Basepath: ../../../globalPlugins\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: zBackup/__init__.py:37
+msgid "Mostrar ventana principal"
+msgstr "Показать главное окно"
+
+#: zBackup/__init__.py:49
+msgid "Ya hay una instancia de zBackup para NVDA abierta."
+msgstr "Экземпляр zBackup для NVDA уже открыт."
+
+#: zBackup/__init__.py:52
+msgid "No se puede ejecutar zBackup en una copia portable de NVDA."
+msgstr "Вы не можете запустить zBackup на портативной копии NVDA."
+
+#: zBackup/__init__.py:71
+msgid ""
+"No se encontró Drive Snapshot.\n"
+"\n"
+"Es necesario descargar la aplicación para poder usar el complemento.\n"
+"\n"
+"La aplicación es portable y se guardara en el directorio del complemento:\n"
+"\n"
+"{}\n"
+"\n"
+"Su peso es inferior a 500KB.\n"
+"\n"
+"Le recuerdo que la aplicación es de evaluación por 30 días, es recomendable "
+"ver la ayuda del complemento.\n"
+"\n"
+"¿Desea descargar la aplicación ahora para poder usar el complemento?"
+msgstr ""
+"Снимок диска не найден.\n"
+"\n"
+"Вам нужно загрузить приложение, чтобы иметь возможность использовать "
+"плагин.\n"
+"\n"
+"Приложение является портативным и будет сохранено в каталоге плагина:\n"
+"\n"
+"{}\n"
+"\n"
+"Его вес составляет менее 500 КБ.\n"
+"\n"
+"Напомню, что приложение является оценкой в течение 30 дней, желательно "
+"увидеть помощь плагина.\n"
+"\n"
+"Вы хотите загрузить приложение сейчас, чтобы использовать плагин?"
+
+#: zBackup/__init__.py:86 zBackup/__init__.py:353 zBackup/__init__.py:398
+#: zBackup/__init__.py:497 zBackup/__init__.py:675 zBackup/__init__.py:721
+#: zBackup/__init__.py:752 zBackup/__init__.py:768 zBackup/__init__.py:805
+msgid "Pregunta"
+msgstr "Вопрос"
+
+#: zBackup/__init__.py:116
+msgid "Descargando Drive Snapshot..."
+msgstr "Загрузка моментального снимка диска..."
+
+#: zBackup/__init__.py:127 zBackup/__init__.py:559
+msgid "&Aceptar"
+msgstr "&Принимаю"
+
+#: zBackup/__init__.py:132
+msgid "&Cerrar"
+msgstr "&Закрыть"
+
+#: zBackup/__init__.py:216 zBackup/__init__.py:220
+msgid "Espere por favor...\n"
+msgstr "Пожалуйста, подождите...\n"
+
+#: zBackup/__init__.py:216 zBackup/__init__.py:220
+#, python-format
+msgid "Descargando: %s"
+msgstr "Загружено: %s"
+
+#: zBackup/__init__.py:232
+msgid "La descarga se completó.\n"
+msgstr "Загрузка завершена.\n"
+
+#: zBackup/__init__.py:232 zBackup/__init__.py:234
+msgid "Ya puede cerrar esta ventana."
+msgstr "Вы можете закрыть это окно."
+
+#: zBackup/__init__.py:234
+msgid "Algo salió mal.\n"
+msgstr "Что-то пошло не так.\n"
+
+#: zBackup/__init__.py:234
+msgid "Compruebe que tiene conexión a internet y vuelva a intentarlo.\n"
+msgstr ""
+"Убедитесь, что у вас есть подключение к интернету, и повторите попытку.\n"
+
+#: zBackup/__init__.py:250
+msgid "zBackup para NVDA"
+msgstr "z-Резервное копирование для NVDA"
+
+#: zBackup/__init__.py:258
+msgid "&Directorio destino:"
+msgstr "&Каталог назначения:"
+
+#: zBackup/__init__.py:266
+msgid "&Seleccionar directorio"
+msgstr "&Выбрать каталог"
+
+#: zBackup/__init__.py:269
+msgid "&Nombre para la copia de seguridad"
+msgstr "Имя для резервной копии"
+
+#: zBackup/__init__.py:275
+msgid "Seleccione el &tamaño para los archivos de la copia:"
+msgstr "Выберите размер файлов копирования:"
+
+#: zBackup/__init__.py:286
+msgid "&Iniciar la copia de seguridad"
+msgstr "&Запустить резервное копирование"
+
+#: zBackup/__init__.py:289
+msgid "&Menú"
+msgstr "&Меню"
+
+#: zBackup/__init__.py:318
+msgid "&Restaurar copia de seguridad"
+msgstr "&Восстановление резервной копии"
+
+#: zBackup/__init__.py:320
+msgid "&Montar disco virtual de una copia de seguridad"
+msgstr "&Монтировать виртуальный диск из резервной копии"
+
+#: zBackup/__init__.py:322
+msgid "&Desmontar unidades virtuales"
+msgstr "&Размонтируйте виртуальные диски"
+
+#: zBackup/__init__.py:324
+msgid "&Ejecutar la aplicación Drive Snapshot"
+msgstr "&Запустить приложение Drive Snapshot"
+
+#: zBackup/__init__.py:332
+msgid ""
+"*** ADVERTENCIA ***\n"
+"\n"
+"A continuación se le va a pedir que elija un archivo *.sna que pertenece a "
+"una copia de seguridad.\n"
+"\n"
+"Cuando lo seleccione se le pedirá permisos de administrador, el ordenador se "
+"reiniciara y se restaurara la copia de seguridad.\n"
+"\n"
+"Después de pedirle permisos de Administrador quedara una ventana de consola "
+"la cual cuando presionemos cualquier tecla se reiniciara y dará comienzo la "
+"copia de seguridad.\n"
+"\n"
+"Es conveniente que tenga todas las aplicaciones cerradas o cuando Windows se "
+"lo solicite le diga finalizar todo.\n"
+"\n"
+"Tenga en cuenta que el proceso no puede cancelarse y si acepta debe mantener "
+"el ordenador con batería suficiente, mejor enchufado a la corriente "
+"eléctrica y esperar a que Windows se reinicie ya con la copia restaurada.\n"
+"\n"
+"Es conveniente tener en la pantalla de inicio de Windows activado el lector "
+"de pantalla para que nos avise que inicio.\n"
+"\n"
+"La acción que transcurre entre el reinicio siguiente y el inicio de Windows "
+"no es accesible, pero no tiene que interactuar para nada con el ordenador.\n"
+"\n"
+"Si lo desea y tiene alguna aplicación móvil de OCR puede ir mirando de "
+"capturar alguna información que le indique el porcentaje de la restauración, "
+"sobre la esquina inferior derecha suele aparecer el porcentaje que lleva "
+"restaurado.\n"
+"\n"
+"Le recuerdo que el autor del complemento queda exento de cualquier problema "
+"que pueda causar una mala restauración.\n"
+"\n"
+"¿Desea continuar?"
+msgstr ""
+"*** ПРЕДУПРЕЖДЕНИЕ ***\n"
+"\n"
+"Далее вам будет предложено выбрать файл *.sna, принадлежащий резервной "
+"копии.\n"
+"\n"
+"При его выборе у вас будут запрошены права администратора, компьютер "
+"перезагрузится, и резервная копия будет восстановлена.\n"
+"\n"
+"После запроса прав администратора появится консольное окно, и при нажатии "
+"любой клавиши произойдет перезагрузка и начнется резервное копирование.\n"
+"\n"
+"Рекомендуется, чтобы все приложения были закрыты или когда Windows предложит "
+"завершить работу.\n"
+"\n"
+"Имейте в виду, что процесс нельзя отменить, и если вы согласитесь на него, "
+"вам следует держать компьютер с достаточным зарядом батареи, желательно "
+"подключенным к сети, и дождаться перезапуска Windows с восстановленной "
+"копией.\n"
+"\n"
+"Рекомендуется активировать программу чтения с экрана на стартовом экране "
+"Windows, чтобы она предупреждала нас при запуске.\n"
+"\n"
+"Действия между следующей перезагрузкой и запуском Windows недоступны, но вам "
+"вообще не нужно взаимодействовать с компьютером.\n"
+"\n"
+"При желании и наличии мобильного приложения OCR можно попытаться захватить "
+"информацию, указывающую на процент восстановления, в правом нижнем углу "
+"обычно появляется процент, который был восстановлен.\n"
+"\n"
+"Напоминаю, что автор дополнения освобожден от любой проблемы, которая может "
+"привести к плохому восстановлению.\n"
+"\n"
+"Вы хотите продолжить?"
+
+#: zBackup/__init__.py:357 zBackup/__init__.py:616
+msgid "Archivo copia de seguridad (*.sna)|*.sna"
+msgstr "Файл резервной копии (*.sna)|*.sna"
+
+#: zBackup/__init__.py:358 zBackup/__init__.py:617
+msgid "Seleccione un archivo de copia de seguridad"
+msgstr "Выберите файл резервной копии"
+
+#: zBackup/__init__.py:364
+msgid ""
+"No puede restaurar una copia de seguridad desde la partición de sistema.\n"
+"\n"
+"Mueva la copia de seguridad a otra partición o un medio externo."
+msgstr ""
+"Вы не можете восстановить резервную копию из системного раздела.\n"
+"\n"
+"Переместите резервную копию на другой раздел или внешний носитель."
+
+#: zBackup/__init__.py:367 zBackup/__init__.py:422 zBackup/__init__.py:442
+#: zBackup/__init__.py:458 zBackup/__init__.py:472 zBackup/__init__.py:486
+#: zBackup/__init__.py:592 zBackup/__init__.py:602
+msgid "Error"
+msgstr "Ошибка"
+
+#: zBackup/__init__.py:393
+msgid ""
+"Se va a proceder a desmontar todas las unidades virtuales.\n"
+"\n"
+"Se le pedirá permisos de Administrador para realizar la acción.\n"
+"\n"
+"¿Desea continuar?"
+msgstr ""
+"Это приведет к размонтированию всех виртуальных дисков.\n"
+"\n"
+"Вам будет предложено получить права администратора для выполнения этого "
+"действия.\n"
+"\n"
+"Вы хотите продолжить?"
+
+#: zBackup/__init__.py:412
+msgid "Seleccione un directorio:"
+msgstr "Выберите каталог:"
+
+#: zBackup/__init__.py:417
+msgid ""
+"No puede guardar la copia de seguridad en la ubicación que eligió.\n"
+"\n"
+"{}\n"
+"\n"
+"La copia de seguridad tiene que guardarse en una ubicación distinta a la "
+"partición de sistema ya sea otra partición u otro disco."
+msgstr ""
+"Вы не можете сохранить резервную копию в выбранном вами месте.\n"
+"\n"
+"{}\n"
+"\n"
+"Резервная копия должна быть сохранена не в системном разделе, а в другом "
+"разделе или на другом диске."
+
+#: zBackup/__init__.py:430
+msgid ""
+"La ubicación que eligió no tiene espacio suficiente para guardar la copia de "
+"seguridad.\n"
+"\n"
+"{}\n"
+"\n"
+"La comprobación del tamaño se hace del total de la partición de sistema.\n"
+"\n"
+"Al hacer la copia de seguridad luego se comprime y queda la mitad "
+"aproximadamente, pero es necesario reservar el tamaño original para "
+"imprevistos de compresión.\n"
+"\n"
+"* Tamaño partición sistema: {}\n"
+"* Tamaño libre destino: {}\n"
+"\n"
+"Por favor elija otra ubicación con más espacio o si tiene copias de "
+"seguridad antiguas borre alguna."
+msgstr ""
+"В выбранном вами месте недостаточно места для сохранения резервной копии.\n"
+"\n"
+"{}\n"
+"\n"
+"Проверка размера выполняется для всего системного раздела.\n"
+"\n"
+"Когда создается резервная копия, она затем сжимается, и остается примерно "
+"половина, но необходимо зарезервировать исходный размер на случай сжатия.\n"
+"\n"
+"* Размер системного раздела: {}\n"
+"* Размер свободного места назначения: {}\n"
+"\n"
+"Пожалуйста, выберите другое место с большим пространством или, если у вас "
+"есть старые резервные копии, удалите некоторые из них."
+
+#: zBackup/__init__.py:453
+msgid ""
+"El campo del directorio está vacío.\n"
+"\n"
+"Este campo es obligatorio ya que será donde se guarde la copia de "
+"seguridad.\n"
+"\n"
+"Seleccione un directorio para poder continuar."
+msgstr ""
+"Поле каталога пустое.\n"
+"\n"
+"Это поле является обязательным, поскольку именно в нем будет храниться "
+"резервная копия.\n"
+"\n"
+"Выберите каталог для продолжения."
+
+#: zBackup/__init__.py:463
+msgid ""
+"El campo de nombre para la copia de seguridad  es obligatorio.\n"
+"\n"
+"Dicho campo es necesario para crear el subdirectorio y la estructura de "
+"archivos en.\n"
+"\n"
+"{}\n"
+"\n"
+"Además este campo nos valdrá para identificar nuestra copia de seguridad.\n"
+"\n"
+"Introduzca un nombre para poder continuar."
+msgstr ""
+"Поле имени для резервной копии является обязательным.\n"
+"\n"
+"Это поле необходимо для создания подкаталога и файловой структуры в.\n"
+"\n"
+"{}\n"
+"\n"
+"Это поле также будет использоваться для идентификации вашей резервной "
+"копии.\n"
+"\n"
+"Введите имя, чтобы продолжить."
+
+#: zBackup/__init__.py:477
+msgid ""
+"El nombre para la copia de seguridad contiene caracteres no permitidos.\n"
+"\n"
+"Los siguientes caracteres no pueden ser usados, utilice una revisión virtual "
+"para verlos:\n"
+"\n"
+"\\ / : * ? \" < > |\n"
+"\n"
+"Además por seguridad en las restauraciones se a omitido el poder poner "
+"espacios por lo que le recomiendo los sustituya por guiones o guiones "
+"bajos.\n"
+"\n"
+"Modifique el Nombre para la copia de seguridad para continuar."
+msgstr ""
+"Имя резервной копии содержит недопустимые символы.\n"
+"\n"
+"Следующие символы не могут быть использованы, используйте виртуальную "
+"проверку, чтобы увидеть их:\n"
+"\n"
+"\\ / : * ? \" < > |\n"
+"\n"
+"Кроме того, в целях безопасности пробелы были исключены из восстановления, "
+"поэтому я рекомендую заменить их дефисами или подчеркиваниями.\n"
+"\n"
+"Измените Имя для продолжения резервного копирования."
+
+#: zBackup/__init__.py:490
+msgid ""
+"A continuación se le solicitara permisos de Administrador para poder hacer "
+"la copia de seguridad.\n"
+"\n"
+"Una vez concedidos se abrirá una ventana con el progreso de la copia.\n"
+"\n"
+"Cuando el proceso termine se cerrara la ventana y le saldrá información si "
+"la copia fue exitosa o no.\n"
+"\n"
+"¿Desea empezar la copia de seguridad?"
+msgstr ""
+"Затем вам будет предложено запросить разрешения администратора для создания "
+"резервной копии.\n"
+"\n"
+"После получения разрешения откроется окно, в котором будет показан ход "
+"выполнения резервного копирования.\n"
+"\n"
+"По окончании процесса окно закроется, и вы будете проинформированы об "
+"успешности или неуспешности резервного копирования.\n"
+"\n"
+"Хотите ли вы начать резервное копирование?"
+
+#: zBackup/__init__.py:530
+msgid "Montar imagen de copia de seguridad como unidad virtual"
+msgstr "Смонтируйте образ резервной копии как виртуальный диск"
+
+#: zBackup/__init__.py:539
+msgid "Seleccione una &unidad de disco donde montar la imagen:"
+msgstr "&Выберите диск, на который будет смонтирован образ:"
+
+#: zBackup/__init__.py:545
+msgid "Seleccione un archivo &de copia de seguridad:"
+msgstr "&Выберите файл резервной копии:"
+
+#: zBackup/__init__.py:553
+msgid "&Seleccionar copia de seguridad"
+msgstr "&Выбрать резервную копию"
+
+#: zBackup/__init__.py:562
+msgid "&Cancelar"
+msgstr "&Отменить"
+
+#: zBackup/__init__.py:591
+msgid "Tiene que seleccionar una unidad para poder continuar"
+msgstr "Для продолжения необходимо выбрать диск"
+
+#: zBackup/__init__.py:597
+msgid ""
+"El campo del fichero de copia de seguridad está vacío.\n"
+"\n"
+"Este campo es obligatorio ya que es necesario tener la ruta de una copia de "
+"seguridad para montar.\n"
+"\n"
+"Seleccione un fichero para poder continuar."
+msgstr ""
+"Поле файла резервной копии пустое.\n"
+"\n"
+"Это поле является обязательным, поскольку необходимо иметь путь к файлу "
+"резервной копии для монтирования.\n"
+"\n"
+"Выберите файл для продолжения."
+
+#: zBackup/__init__.py:656
+msgid ""
+"Se completo la copia de seguridad correctamente en la ubicación:\n"
+"\n"
+"{}\n"
+"\n"
+"Le aconsejo guarde correctamente dicho directorio por si necesitara "
+"restaurar."
+msgstr ""
+"Резервное копирование было успешно завершено в этом месте:\n"
+"\n"
+"{}\n"
+"\n"
+"Я советую вам правильно сохранить этот каталог на случай, если вам "
+"понадобится восстановление."
+
+#: zBackup/__init__.py:661 zBackup/__init__.py:796
+msgid "Información"
+msgstr "Информация"
+
+#: zBackup/__init__.py:670 zBackup/__init__.py:716 zBackup/__init__.py:763
+#: zBackup/__init__.py:800
+msgid ""
+"Algo salió mal. Al usar una aplicación externa no puedo dar más información "
+"del error.\n"
+"\n"
+"Pero se guardo un log para que pueda revisarlo.\n"
+"\n"
+"¿Desea ver el log de error?"
+msgstr ""
+"Что-то пошло не так. Поскольку я использую внешнее приложение, я не могу "
+"предоставить больше информации об ошибке.\n"
+"\n"
+"Но журнал был сохранен, чтобы вы могли его просмотреть.\n"
+"\n"
+"Вы хотите посмотреть журнал ошибок?"
+
+#: zBackup/__init__.py:682 zBackup/__init__.py:684 zBackup/__init__.py:725
+#: zBackup/__init__.py:772 zBackup/__init__.py:809
+msgid "Log de error"
+msgstr "Журнал ошибок"
+
+#: zBackup/__init__.py:749
+msgid ""
+"Se monto correctamente la imagen.\n"
+"\n"
+"¿Desea abrir el explorador de archivos en la raíz de la unidad {}?"
+msgstr ""
+"Образ смонтирован правильно.\n"
+"\n"
+"Вы хотите открыть проводник файлов в корне диска {}?"
+
+#: zBackup/__init__.py:795
+msgid "Se desmontaron correctamente todas las imágenes."
+msgstr "Все образы были правильно разобраны."

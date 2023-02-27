@@ -1,0 +1,528 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
+"POT-Creation-Date: 2022-03-22 13:13+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: wafiqtaher <wafiqtaher@gmail.com>\n"
+"Language-Team: \n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"X-Generator: Poedit 1.8.12\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on
+#. to be shown on installation and add-on information found in Add-ons Manager.
+#: buildVars.py:23 addon\globalPlugins\zBackup\__init__.py:248
+msgid "zBackup para NVDA"
+msgstr "z النسخ الإحتياطي للويندوز"
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+#: buildVars.py:26
+msgid "Hacer y restaurar copias de seguridad de la partición Windows"
+msgstr "قسم النسخ الاحتياطي واستعادة الويندوز"
+
+#. Translators: Description for name in input gesture window
+#: addon\globalPlugins\zBackup\__init__.py:35
+msgid "Mostrar ventana principal"
+msgstr "إظهار النافذة الرئيسية"
+
+#. Translators: Message informing that a copy of the plug-in has already been opened
+#: addon\globalPlugins\zBackup\__init__.py:47
+msgid "Ya hay una instancia de zBackup para NVDA abierta."
+msgstr "يوجد بالفعل نافذة  zBackup ل NVDA مفتوحة."
+
+#. Translators: Message informing that it is not possible to run on a portable copy of NVDA
+#: addon\globalPlugins\zBackup\__init__.py:50
+msgid "No se puede ejecutar zBackup en una copia portable de NVDA."
+msgstr "لا يمكنك تشغيل zBackup على نسخة محمولة من NVDA."
+
+#. Translators: Message to inform about snapshot information and that it is to be downloaded
+#: addon\globalPlugins\zBackup\__init__.py:69
+msgid ""
+"No se encontró Drive Snapshot.\n"
+"\n"
+"Es necesario descargar la aplicación para poder usar el complemento.\n"
+"\n"
+"La aplicación es portable y se guardara en el directorio del complemento:\n"
+"\n"
+"{}\n"
+"\n"
+"Su peso es inferior a 500KB.\n"
+"\n"
+"Le recuerdo que la aplicación es de evaluación por 30 días, es recomendable "
+"ver la ayuda del complemento.\n"
+"\n"
+"¿Desea descargar la aplicación ahora para poder usar el complemento?"
+msgstr ""
+"لم يتم العثور على Drive Snapshot.\n"
+"\n"
+"تحتاج إلى تنزيل التطبيق من أجل استخدام المكون الإضافي.\n"
+"\n"
+"التطبيق محمول وسيتم حفظه في دليل البرنامج المساعد:\n"
+"\n"
+"{}\n"
+"\n"
+"حجمه أقل من 500 كيلو بايت.\n"
+"\n"
+"أذكرك أن التطبيق يخضع للتقييم لمدة 30 يومًا ، يوصى بالاطلاع على مساعدة المكون "
+"الإضافي.\n"
+"\n"
+"هل تريد تنزيل التطبيق الآن حتى تتمكن من استخدام المكون الإضافي؟"
+
+#. Translators: Title of the dialog box that will ask about snapshot downloading
+#: addon\globalPlugins\zBackup\__init__.py:84
+#: addon\globalPlugins\zBackup\__init__.py:351
+#: addon\globalPlugins\zBackup\__init__.py:396
+#: addon\globalPlugins\zBackup\__init__.py:495
+#: addon\globalPlugins\zBackup\__init__.py:673
+#: addon\globalPlugins\zBackup\__init__.py:719
+#: addon\globalPlugins\zBackup\__init__.py:750
+#: addon\globalPlugins\zBackup\__init__.py:766
+#: addon\globalPlugins\zBackup\__init__.py:803
+msgid "Pregunta"
+msgstr "يطلب"
+
+#. Translators: Snapshot download window title
+#: addon\globalPlugins\zBackup\__init__.py:114
+msgid "Descargando Drive Snapshot..."
+msgstr "تحميل Drive Snapshot..."
+
+#. Translators: Accept button name
+#: addon\globalPlugins\zBackup\__init__.py:125
+#: addon\globalPlugins\zBackup\__init__.py:557
+msgid "&Aceptar"
+msgstr "مواف&ق"
+
+#. Translators: Name of close button
+#: addon\globalPlugins\zBackup\__init__.py:130
+msgid "&Cerrar"
+msgstr "إ&غلاق"
+
+#. Si la descarga es solo el tamaño
+#: addon\globalPlugins\zBackup\__init__.py:214
+#: addon\globalPlugins\zBackup\__init__.py:218
+msgid "Espere por favor...\n"
+msgstr "الرجاء الإنتظار...\n"
+
+#: addon\globalPlugins\zBackup\__init__.py:214
+#: addon\globalPlugins\zBackup\__init__.py:218
+#, python-format
+msgid "Descargando: %s"
+msgstr "تحميل: %s"
+
+#: addon\globalPlugins\zBackup\__init__.py:230
+msgid "La descarga se completó.\n"
+msgstr "اكتمل التنزيل. \n"
+
+#: addon\globalPlugins\zBackup\__init__.py:230
+#: addon\globalPlugins\zBackup\__init__.py:232
+msgid "Ya puede cerrar esta ventana."
+msgstr "يمكنك الآن إغلاق هذه النافذة."
+
+#: addon\globalPlugins\zBackup\__init__.py:232
+msgid "Algo salió mal.\n"
+msgstr "حدث خطأ ما. \n"
+
+#: addon\globalPlugins\zBackup\__init__.py:232
+msgid "Compruebe que tiene conexión a internet y vuelva a intentarlo.\n"
+msgstr "الرجاء التحقق من اتصالك بالإنترنت وحاول مرة أخرى. \n"
+
+#: addon\globalPlugins\zBackup\__init__.py:256
+msgid "&Directorio destino:"
+msgstr "&وجهة بشكل مباشر:"
+
+#: addon\globalPlugins\zBackup\__init__.py:264
+msgid "&Seleccionar directorio"
+msgstr "&تحديد الدليل"
+
+#: addon\globalPlugins\zBackup\__init__.py:267
+msgid "&Nombre para la copia de seguridad"
+msgstr "&اسم للنسخ الاحتياطي"
+
+#: addon\globalPlugins\zBackup\__init__.py:273
+msgid "Seleccione el &tamaño para los archivos de la copia:"
+msgstr "حدد &حجم ملفات النسخ الاحتياطي:"
+
+#: addon\globalPlugins\zBackup\__init__.py:284
+msgid "&Iniciar la copia de seguridad"
+msgstr "&بدء النسخ الاحتياطي"
+
+#: addon\globalPlugins\zBackup\__init__.py:287
+msgid "&Menú"
+msgstr "&قائمة"
+
+#: addon\globalPlugins\zBackup\__init__.py:316
+msgid "&Restaurar copia de seguridad"
+msgstr "ا&سترجاع النسخة الاحتياطية"
+
+#: addon\globalPlugins\zBackup\__init__.py:318
+msgid "&Montar disco virtual de una copia de seguridad"
+msgstr "&تحميل القرص الظاهري من نسخة احتياطية"
+
+#: addon\globalPlugins\zBackup\__init__.py:320
+msgid "&Desmontar unidades virtuales"
+msgstr "إ&لغاء تحميل محركات الأقراص الافتراضية"
+
+#: addon\globalPlugins\zBackup\__init__.py:322
+msgid "&Ejecutar la aplicación Drive Snapshot"
+msgstr "&شغّل تطبيق Drive Snapshot"
+
+#: addon\globalPlugins\zBackup\__init__.py:330
+msgid ""
+"*** ADVERTENCIA ***\n"
+"\n"
+"A continuación se le va a pedir que elija un archivo *.sna que pertenece a "
+"una copia de seguridad.\n"
+"\n"
+"Cuando lo seleccione se le pedirá permisos de administrador, el ordenador se "
+"reiniciara y se restaurara la copia de seguridad.\n"
+"\n"
+"Después de pedirle permisos de Administrador quedara una ventana de consola "
+"la cual cuando presionemos cualquier tecla se reiniciara y dará comienzo la "
+"copia de seguridad.\n"
+"\n"
+"Es conveniente que tenga todas las aplicaciones cerradas o cuando Windows se "
+"lo solicite le diga finalizar todo.\n"
+"\n"
+"Tenga en cuenta que el proceso no puede cancelarse y si acepta debe mantener "
+"el ordenador con batería suficiente, mejor enchufado a la corriente "
+"eléctrica y esperar a que Windows se reinicie ya con la copia restaurada.\n"
+"\n"
+"Es conveniente tener en la pantalla de inicio de Windows activado el lector "
+"de pantalla para que nos avise que inicio.\n"
+"\n"
+"La acción que transcurre entre el reinicio siguiente y el inicio de Windows "
+"no es accesible, pero no tiene que interactuar para nada con el ordenador.\n"
+"\n"
+"Si lo desea y tiene alguna aplicación móvil de OCR puede ir mirando de "
+"capturar alguna información que le indique el porcentaje de la restauración, "
+"sobre la esquina inferior derecha suele aparecer el porcentaje que lleva "
+"restaurado.\n"
+"\n"
+"Le recuerdo que el autor del complemento queda exento de cualquier problema "
+"que pueda causar una mala restauración.\n"
+"\n"
+"¿Desea continuar?"
+msgstr ""
+"*** تحذير *** \n"
+"\n"
+"سيُطلب منك بعد ذلك اختيار ملف * .sna ينتمي إلى نسخة احتياطية. \n"
+"\n"
+"عند تحديده ، سيُطلب منك أذونات المسؤول ، وسيعيد تشغيل الكمبيوتر وستتم استعادة "
+"النسخة الاحتياطية. \n"
+"\n"
+"بعد طلب أذونات المسؤول ، ستبقى نافذة وحدة التحكم والتي ، عندما نضغط على أي "
+"مفتاح ، ستتم إعادة التشغيل وبدء النسخ الاحتياطي. \n"
+"\n"
+"من الملائم أن يتم إغلاق جميع التطبيقات أو عندما يطلب منك Windows أن تخبره "
+"بإنهاء كل شيء. \n"
+"\n"
+"ضع في اعتبارك أنه لا يمكن إلغاء العملية ، وفي حالة الموافقة ، يجب عليك "
+"الاحتفاظ بالكمبيوتر ببطارية كافية ، ومن الأفضل توصيله بمصدر الطاقة وانتظار "
+"إعادة تشغيل Windows بالنسخة المستعادة. \n"
+"\n"
+"من الملائم تنشيط قارئ الشاشة على شاشة بدء Windows حتى يُعلمنا ببدء تشغيله. \n"
+"\n"
+"لا يمكن الوصول إلى الإجراء بين عملية إعادة التمهيد التالية وبدء تشغيل "
+"Windows ، ولكن ليس من الضروري التفاعل مع الكمبيوتر على الإطلاق. \n"
+"\n"
+"إذا كنت ترغب في استخدام تطبيق OCR للهاتف المحمول ولديك ، يمكنك محاولة التقاط "
+"بعض المعلومات التي تشير إلى النسبة المئوية للاستعادة ، وعادة ما تظهر النسبة "
+"المئوية التي تمت استعادتها في الزاوية اليمنى السفلية. \n"
+"\n"
+"أذكرك أن مؤلف المكون الإضافي معفى من أي مشكلة قد تتسبب في استعادة سيئة. \n"
+"\n"
+"هل ترغب في الاستمرار؟"
+
+#: addon\globalPlugins\zBackup\__init__.py:355
+#: addon\globalPlugins\zBackup\__init__.py:614
+msgid "Archivo copia de seguridad (*.sna)|*.sna"
+msgstr "ملف النسخ الاحتياطي (* .sna) | * .sna"
+
+#: addon\globalPlugins\zBackup\__init__.py:356
+#: addon\globalPlugins\zBackup\__init__.py:615
+msgid "Seleccione un archivo de copia de seguridad"
+msgstr "حدد ملف النسخ الاحتياطي"
+
+#: addon\globalPlugins\zBackup\__init__.py:362
+msgid ""
+"No puede restaurar una copia de seguridad desde la partición de sistema.\n"
+"\n"
+"Mueva la copia de seguridad a otra partición o un medio externo."
+msgstr ""
+"لا يمكنك استعادة نسخة احتياطية من قسم النظام. \n"
+"\n"
+"انقل النسخة الاحتياطية إلى قسم آخر أو إلى وسائط خارجية."
+
+#: addon\globalPlugins\zBackup\__init__.py:365
+#: addon\globalPlugins\zBackup\__init__.py:420
+#: addon\globalPlugins\zBackup\__init__.py:440
+#: addon\globalPlugins\zBackup\__init__.py:456
+#: addon\globalPlugins\zBackup\__init__.py:470
+#: addon\globalPlugins\zBackup\__init__.py:484
+#: addon\globalPlugins\zBackup\__init__.py:590
+#: addon\globalPlugins\zBackup\__init__.py:600
+msgid "Error"
+msgstr "خطأ"
+
+#: addon\globalPlugins\zBackup\__init__.py:391
+msgid ""
+"Se va a proceder a desmontar todas las unidades virtuales.\n"
+"\n"
+"Se le pedirá permisos de Administrador para realizar la acción.\n"
+"\n"
+"¿Desea continuar?"
+msgstr ""
+"سيتم إلغاء تحميل كافة محركات الأقراص الظاهرية.\n"
+"\n"
+"سيُطلب منك الحصول على أذونات المسؤول لتنفيذ الإجراء.\n"
+"\n"
+"هل ترغب في الاستمرار؟"
+
+#: addon\globalPlugins\zBackup\__init__.py:410
+msgid "Seleccione un directorio:"
+msgstr "حدد دليلاً:"
+
+#: addon\globalPlugins\zBackup\__init__.py:415
+msgid ""
+"No puede guardar la copia de seguridad en la ubicación que eligió.\n"
+"\n"
+"{}\n"
+"\n"
+"La copia de seguridad tiene que guardarse en una ubicación distinta a la "
+"partición de sistema ya sea otra partición u otro disco."
+msgstr ""
+"لا يمكنك حفظ النسخة الاحتياطية في الموقع الذي اخترته.\n"
+"\n"
+"{}\n"
+"\n"
+"يجب حفظ النسخة الاحتياطية في موقع آخر غير قسم النظام ، إما قسم آخر أو قرص "
+"آخر."
+
+#: addon\globalPlugins\zBackup\__init__.py:428
+msgid ""
+"La ubicación que eligió no tiene espacio suficiente para guardar la copia de "
+"seguridad.\n"
+"\n"
+"{}\n"
+"\n"
+"La comprobación del tamaño se hace del total de la partición de sistema.\n"
+"\n"
+"Al hacer la copia de seguridad luego se comprime y queda la mitad "
+"aproximadamente, pero es necesario reservar el tamaño original para "
+"imprevistos de compresión.\n"
+"\n"
+"* Tamaño partición sistema: {}\n"
+"* Tamaño libre destino: {}\n"
+"\n"
+"Por favor elija otra ubicación con más espacio o si tiene copias de "
+"seguridad antiguas borre alguna."
+msgstr ""
+"لا يحتوي الموقع الذي اخترته على مساحة كافية لحفظ النسخة الاحتياطية.\n"
+"\n"
+"{}\n"
+"\n"
+"تم إجراء فحص الحجم من إجمالي قسم النظام.\n"
+"\n"
+"عند عمل النسخة الاحتياطية ، يتم ضغطها ويبقى نصفها تقريبًا ، لكن من الضروري "
+"الاحتفاظ بالحجم الأصلي للضغط غير المتوقع.\n"
+"\n"
+"* حجم قسم النظام: {} \n"
+"* الحجم الحر للوجهة: {} \n"
+"\n"
+"الرجاء اختيار موقع آخر به مساحة أكبر أو إذا كان لديك نسخ احتياطية قديمة ، "
+"فاحذف بعضها."
+
+#: addon\globalPlugins\zBackup\__init__.py:451
+msgid ""
+"El campo del directorio está vacío.\n"
+"\n"
+"Este campo es obligatorio ya que será donde se guarde la copia de "
+"seguridad.\n"
+"\n"
+"Seleccione un directorio para poder continuar."
+msgstr ""
+"حقل الدليل فارغ.\n"
+"\n"
+"هذا الحقل مطلوب حيث سيتم حفظ النسخة الاحتياطية فيه.\n"
+"\n"
+"الرجاء تحديد دليل للمتابعة."
+
+#: addon\globalPlugins\zBackup\__init__.py:461
+msgid ""
+"El campo de nombre para la copia de seguridad  es obligatorio.\n"
+"\n"
+"Dicho campo es necesario para crear el subdirectorio y la estructura de "
+"archivos en.\n"
+"\n"
+"{}\n"
+"\n"
+"Además este campo nos valdrá para identificar nuestra copia de seguridad.\n"
+"\n"
+"Introduzca un nombre para poder continuar."
+msgstr ""
+"مطلوب حقل الاسم للنسخ الاحتياطي.\n"
+"\n"
+"هذا الحقل مطلوب لإنشاء دليل فرعي وبنية ملف في.\n"
+"\n"
+"{}\n"
+"\n"
+"بالإضافة إلى ذلك ، سيتم استخدام هذا الحقل لتعريف النسخة الاحتياطية الخاصة "
+"بنا.\n"
+"\n"
+"أدخل اسمًا لتتمكن من المتابعة."
+
+#: addon\globalPlugins\zBackup\__init__.py:475
+msgid ""
+"El nombre para la copia de seguridad contiene caracteres no permitidos.\n"
+"\n"
+"Los siguientes caracteres no pueden ser usados, utilice una revisión virtual "
+"para verlos:\n"
+"\n"
+"\\ / : * ? \" < > |\n"
+"\n"
+"Además por seguridad en las restauraciones se a omitido el poder poner "
+"espacios por lo que le recomiendo los sustituya por guiones o guiones "
+"bajos.\n"
+"\n"
+"Modifique el Nombre para la copia de seguridad para continuar."
+msgstr ""
+"يحتوي اسم النسخة الاحتياطية على أحرف غير صالحة.\n"
+"\n"
+"لا يمكن استخدام الأحرف التالية ، الرجاء استخدام مراجعة افتراضية لرؤيتها: \n"
+"\n"
+"\\ /: *؟ \"<> | \n"
+"\n"
+"بالإضافة إلى ذلك ، من أجل الأمان في عمليات الاستعادة ، تم حذف القدرة على وضع "
+"مسافات ، لذلك أوصيك باستبدالها بواصلات أو شرطات سفلية.\n"
+"\n"
+"قم بتعديل اسم النسخة الاحتياطية للمتابعة."
+
+#: addon\globalPlugins\zBackup\__init__.py:488
+msgid ""
+"A continuación se le solicitara permisos de Administrador para poder hacer "
+"la copia de seguridad.\n"
+"\n"
+"Una vez concedidos se abrirá una ventana con el progreso de la copia.\n"
+"\n"
+"Cuando el proceso termine se cerrara la ventana y le saldrá información si "
+"la copia fue exitosa o no.\n"
+"\n"
+"¿Desea empezar la copia de seguridad?"
+msgstr ""
+"ستتم مطالبتك بعد ذلك بأذونات المسؤول لتتمكن من عمل النسخة الاحتياطية.\n"
+"\n"
+"بمجرد منحه ، سيتم فتح نافذة مع تقدم النسخة.\n"
+"\n"
+"عند انتهاء العملية ، ستغلق النافذة وستحصل على معلومات إذا كانت النسخة ناجحة "
+"أم لا.\n"
+"\n"
+"هل تريد بدء النسخ الاحتياطي؟"
+
+#: addon\globalPlugins\zBackup\__init__.py:528
+msgid "Montar imagen de copia de seguridad como unidad virtual"
+msgstr "تحميل صورة احتياطية كمحرك أقراص افتراضي"
+
+#: addon\globalPlugins\zBackup\__init__.py:537
+msgid "Seleccione una &unidad de disco donde montar la imagen:"
+msgstr "حدد &محرك لتحميل الصورة إلى:"
+
+#: addon\globalPlugins\zBackup\__init__.py:543
+msgid "Seleccione un archivo &de copia de seguridad:"
+msgstr "حدد نسخة احتياطية &ملف:"
+
+#: addon\globalPlugins\zBackup\__init__.py:551
+msgid "&Seleccionar copia de seguridad"
+msgstr "&حدد النسخ الاحتياطي"
+
+#: addon\globalPlugins\zBackup\__init__.py:560
+msgid "&Cancelar"
+msgstr "&يلغي"
+
+#: addon\globalPlugins\zBackup\__init__.py:589
+msgid "Tiene que seleccionar una unidad para poder continuar"
+msgstr "يجب عليك تحديد محرك أقراص للمتابعة"
+
+#: addon\globalPlugins\zBackup\__init__.py:595
+msgid ""
+"El campo del fichero de copia de seguridad está vacío.\n"
+"\n"
+"Este campo es obligatorio ya que es necesario tener la ruta de una copia de "
+"seguridad para montar.\n"
+"\n"
+"Seleccione un fichero para poder continuar."
+msgstr ""
+"حقل ملف النسخ الاحتياطي فارغ.\n"
+"\n"
+"هذا الحقل مطلوب لأنه من الضروري أن يكون لديك مسار نسخة احتياطية ليتم "
+"تحميلها.\n"
+"\n"
+"حدد ملفا للمتابعة."
+
+#: addon\globalPlugins\zBackup\__init__.py:654
+msgid ""
+"Se completo la copia de seguridad correctamente en la ubicación:\n"
+"\n"
+"{}\n"
+"\n"
+"Le aconsejo guarde correctamente dicho directorio por si necesitara "
+"restaurar."
+msgstr ""
+"اكتمل النسخ الاحتياطي بنجاح في الموقع:\n"
+"\n"
+"{}\n"
+"\n"
+"أنصحك بحفظ هذا الدليل بشكل صحيح في حالة احتياجك إلى الاستعادة."
+
+#: addon\globalPlugins\zBackup\__init__.py:659
+#: addon\globalPlugins\zBackup\__init__.py:794
+msgid "Información"
+msgstr "معلومة"
+
+#: addon\globalPlugins\zBackup\__init__.py:668
+#: addon\globalPlugins\zBackup\__init__.py:714
+#: addon\globalPlugins\zBackup\__init__.py:761
+#: addon\globalPlugins\zBackup\__init__.py:798
+msgid ""
+"Algo salió mal. Al usar una aplicación externa no puedo dar más información "
+"del error.\n"
+"\n"
+"Pero se guardo un log para que pueda revisarlo.\n"
+"\n"
+"¿Desea ver el log de error?"
+msgstr ""
+"هناك خطأ ما. عند استخدام تطبيق خارجي ، لا يمكنني إعطاء المزيد من معلومات "
+"الخطأ.\n"
+"\n"
+"لكن تم حفظ السجل حتى تتمكن من مراجعته.\n"
+"\n"
+"هل تريد أن ترى سجل الأخطاء؟"
+
+#: addon\globalPlugins\zBackup\__init__.py:680
+#: addon\globalPlugins\zBackup\__init__.py:682
+#: addon\globalPlugins\zBackup\__init__.py:723
+#: addon\globalPlugins\zBackup\__init__.py:770
+#: addon\globalPlugins\zBackup\__init__.py:807
+msgid "Log de error"
+msgstr "سجل الأخطاء"
+
+#: addon\globalPlugins\zBackup\__init__.py:747
+msgid ""
+"Se monto correctamente la imagen.\n"
+"\n"
+"¿Desea abrir el explorador de archivos en la raíz de la unidad {}?"
+msgstr ""
+"تم تحميل الصورة بنجاح.\n"
+"\n"
+"هل تريد فتح مستكشف الملفات على جذر محرك الأقراص {}؟"
+
+#: addon\globalPlugins\zBackup\__init__.py:793
+msgid "Se desmontaron correctamente todas las imágenes."
+msgstr "تم فك جميع الصور بنجاح."

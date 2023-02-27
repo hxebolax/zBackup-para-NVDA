@@ -1,1 +1,1 @@
-* Compatibilidad con NVDA 2022.1
+* Compatibilidad con NVDA 2023.1

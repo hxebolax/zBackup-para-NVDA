@@ -50,11 +50,11 @@ Desde la pantalla principal podremos hacer la copia de seguridad.
 
 Para lanzar la pantalla principal es necesario añadir un gesto en NVDA / Preferencias / Gestos de entrada / Categoría zBackup.
 
-Una vez abierta, caeremos en un cuadro de sólo lectura que contendrá el directorio donde guardaremos la copia de seguridad. Si tabulamos, caeremos en el botón Seleccionar directorio, el cuál nos permitirá seleccionar dicho directorio.
+Una vez abierta, caeremos en un cuadro de sólo lectura que contendrá el directorio donde guardaremos la copia de seguridad. Si tabulamos, caeremos en el botón "Seleccionar directorio", el cuál nos permitirá seleccionar dicho directorio.
 
 Las copias de seguridad se guardarán en subcarpetas dentro de este directorio. Es recomendable que esta carpeta no tenga espacios.
 
-Si tabulamos de nuevo caeremos en un cuadro de edición llamado Nombre para la copia de seguridad. En este cuadro pondremos el nombre identificativo de nuestra copia de seguridad.
+Si tabulamos de nuevo caeremos en un cuadro de edición llamado "Nombre para la copia de seguridad". En este cuadro pondremos el nombre identificativo de nuestra copia de seguridad.
 
 En este cuadro no se permiten espacios ni caracteres no permitidos por Windows en carpetas y archivos. Dichos caracteres son los siguientes, comprendidos entre las comillas triples:
 
@@ -66,9 +66,9 @@ Si volvemos a tabular, caeremos en un cuadro combinado donde podremos elegir el 
 
 Esto significa que al hacer la copia de seguridad, los archivos resultantes tendrán ese tamaño. Para poner un ejemplo: si nuestra partición de Windows tiene un tamaño de 60 GB aproximadamente, la copia resultante tendrá un tamaño total de unos 20 a 30 GB. Si elegimos que los archivos resultantes sean de 10 GB, creará aproximadamente 3 archivos.
 
-Si tabulamos otra vez, caeremos en el botón Iniciar la copia de seguridad. Si todos los datos están bien rellenados y se cumplen las condiciones de espacio y de ubicación, nos dará la posibilidad de iniciar la copia de seguridad, indicando que va a hacer en todo momento.
+Si tabulamos otra vez, caeremos en el botón "Iniciar la copia de seguridad". Si todos los datos están bien rellenados y se cumplen las condiciones de espacio y de ubicación, nos dará la posibilidad de iniciar la copia de seguridad, indicando que va a hacer en todo momento.
 
-Si volvemos a tabular, caeremos en el botón Menú. Si lo pulsamos, se desplegará un menú contextual con las siguientes opciones:
+Si volvemos a tabular, caeremos en el botón "Menú". Si lo pulsamos, se desplegará un menú contextual con las siguientes opciones:
 
 * Restaurar copia de seguridad: Con esta opción, podremos restaurar una copia de seguridad. Se nos irá orientando con mensajes. Es importante tener en cuenta que, una vez llegado al punto de elegir la imagen a restaurar y aceptarla, el proceso ya no tiene vuelta atrás y se restaurará el sistema.
 
@@ -88,7 +88,7 @@ Es recomendable tener un medio de arranque por si algo saliera mal. Se recomiend
 
 zBackup a sido probado en Windows sin modificar. No se garantiza un buen funcionamiento en ciertas versiones de Windows modificadas que circulan por Internet.
 
-Vuelvo a advertir que zBackup no sea usado si no se tienen los conocimientos para salir de una mala restauración.
+Vuelvo a advertir que zBackup no sea usado si no se tienen los conocimientos para poder salir de una mala restauración.
 
 ## Problemas encontrados
 
@@ -102,7 +102,7 @@ En esos casos, es conveniente esperar unos minutos y apagar el ordenador.
 
 La próxima vez que iniciemos, Windows nos preguntará si queremos hacer una comprobación del disco o empezará dicha comprobación por sí mismo, dando como resultado una pantalla inaccesible que nos dice que probemos otra opción para recuperar o que apaguemos el ordenador.
 
-Si pulsamos intro, se apagará. La próxima vez que arranquemos el ordenador, se iniciará en Windows.
+Si pulsamos Intro, se apagará. La próxima vez que arranquemos el ordenador, se iniciará en Windows.
 
 Esto es la protección del modo seguro, que hila muy fino, pero en realidad la restauración se hizo correctamente.
 
