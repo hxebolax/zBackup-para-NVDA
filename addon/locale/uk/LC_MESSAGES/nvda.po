@@ -1,0 +1,537 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
+"POT-Creation-Date: 2023-03-02 11:45+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Generator: Poedit 3.2.2\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on
+#. to be shown on installation and add-on information found in Add-ons Manager.
+#: buildVars.py:23 addon\globalPlugins\zBackup\__init__.py:250
+msgid "zBackup para NVDA"
+msgstr "zBackup для NVDA"
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+#: buildVars.py:26
+msgid "Hacer y restaurar copias de seguridad de la partición Windows"
+msgstr "Резервне копіювання та відновлення розділу Windows"
+
+#. Translators: Description for name in input gesture window
+#: addon\globalPlugins\zBackup\__init__.py:37
+msgid "Mostrar ventana principal"
+msgstr "Показати головне вікно"
+
+#. Translators: Message informing that a copy of the plug-in has already been opened
+#: addon\globalPlugins\zBackup\__init__.py:49
+msgid "Ya hay una instancia de zBackup para NVDA abierta."
+msgstr "Вікно zBackup для NVDA вже відкрито."
+
+#. Translators: Message informing that it is not possible to run on a portable copy of NVDA
+#: addon\globalPlugins\zBackup\__init__.py:52
+msgid "No se puede ejecutar zBackup en una copia portable de NVDA."
+msgstr "Ви не можете запустити zBackup на переносній копії NVDA."
+
+#. Translators: Message to inform about snapshot information and that it is to be downloaded
+#: addon\globalPlugins\zBackup\__init__.py:71
+msgid ""
+"No se encontró Drive Snapshot.\n"
+"\n"
+"Es necesario descargar la aplicación para poder usar el complemento.\n"
+"\n"
+"La aplicación es portable y se guardara en el directorio del complemento:\n"
+"\n"
+"{}\n"
+"\n"
+"Su peso es inferior a 500KB.\n"
+"\n"
+"Le recuerdo que la aplicación es de evaluación por 30 días, es recomendable "
+"ver la ayuda del complemento.\n"
+"\n"
+"¿Desea descargar la aplicación ahora para poder usar el complemento?"
+msgstr ""
+"Програму Drive SnapShot не знайдено.\n"
+"\n"
+"Щоб використовувати додаток, потрібно завантажити програму.\n"
+"\n"
+"Програма є переносною і буде збережена в каталозі додатків:\n"
+"\n"
+"{}\n"
+"\n"
+"Розмір програми менше 500 КБ.\n"
+"\n"
+"Примітка: Програму можна використовувати як пробну версію протягом 30 днів. "
+"Рекомендується ознайомитися з довідковою документацією додатка.\n"
+"\n"
+"Ви хочете завантажити програму зараз, щоб використовувати додаток?"
+
+#. Translators: Title of the dialog box that will ask about snapshot downloading
+#: addon\globalPlugins\zBackup\__init__.py:86
+#: addon\globalPlugins\zBackup\__init__.py:353
+#: addon\globalPlugins\zBackup\__init__.py:398
+#: addon\globalPlugins\zBackup\__init__.py:497
+#: addon\globalPlugins\zBackup\__init__.py:675
+#: addon\globalPlugins\zBackup\__init__.py:721
+#: addon\globalPlugins\zBackup\__init__.py:752
+#: addon\globalPlugins\zBackup\__init__.py:768
+#: addon\globalPlugins\zBackup\__init__.py:805
+msgid "Pregunta"
+msgstr "УВАГА"
+
+#. Translators: Snapshot download window title
+#: addon\globalPlugins\zBackup\__init__.py:116
+msgid "Descargando Drive Snapshot..."
+msgstr "Завантаження програми Drive Snapshot..."
+
+#. Translators: Accept button name
+#: addon\globalPlugins\zBackup\__init__.py:127
+#: addon\globalPlugins\zBackup\__init__.py:559
+msgid "&Aceptar"
+msgstr "&Гаразд"
+
+#. Translators: Name of close button
+#: addon\globalPlugins\zBackup\__init__.py:132
+msgid "&Cerrar"
+msgstr "&Закрити"
+
+#. Si la descarga es solo el tamaño
+#: addon\globalPlugins\zBackup\__init__.py:216
+#: addon\globalPlugins\zBackup\__init__.py:220
+msgid "Espere por favor...\n"
+msgstr "Будь ласка, зачекайте...\n"
+
+#: addon\globalPlugins\zBackup\__init__.py:216
+#: addon\globalPlugins\zBackup\__init__.py:220
+#, python-format
+msgid "Descargando: %s"
+msgstr "Завантаження: %s"
+
+#: addon\globalPlugins\zBackup\__init__.py:232
+msgid "La descarga se completó.\n"
+msgstr "Завантаження завершено.\n"
+
+#: addon\globalPlugins\zBackup\__init__.py:232
+#: addon\globalPlugins\zBackup\__init__.py:234
+msgid "Ya puede cerrar esta ventana."
+msgstr "Тепер ви можете закрити це вікно."
+
+#: addon\globalPlugins\zBackup\__init__.py:234
+msgid "Algo salió mal.\n"
+msgstr "Щось пішло не так.\n"
+
+#: addon\globalPlugins\zBackup\__init__.py:234
+msgid "Compruebe que tiene conexión a internet y vuelva a intentarlo.\n"
+msgstr "Перевірте, чи є у вас підключення до Інтернету, і спробуйте ще раз.\n"
+
+#: addon\globalPlugins\zBackup\__init__.py:258
+msgid "&Directorio destino:"
+msgstr "&Каталог призначення:"
+
+#: addon\globalPlugins\zBackup\__init__.py:266
+msgid "&Seleccionar directorio"
+msgstr "&Виберіть каталог"
+
+#: addon\globalPlugins\zBackup\__init__.py:269
+msgid "&Nombre para la copia de seguridad"
+msgstr "&Назва для резервної копії"
+
+#: addon\globalPlugins\zBackup\__init__.py:275
+msgid "Seleccione el &tamaño para los archivos de la copia:"
+msgstr "Виберіть &розмір для файлів резервної копії:"
+
+#: addon\globalPlugins\zBackup\__init__.py:286
+msgid "&Iniciar la copia de seguridad"
+msgstr "&Запустити резервне копіювання"
+
+#: addon\globalPlugins\zBackup\__init__.py:289
+msgid "&Menú"
+msgstr "&Меню"
+
+#: addon\globalPlugins\zBackup\__init__.py:318
+msgid "&Restaurar copia de seguridad"
+msgstr "&Відновити резервну копію"
+
+#: addon\globalPlugins\zBackup\__init__.py:320
+msgid "&Montar disco virtual de una copia de seguridad"
+msgstr "&Змонтувати віртуальний диск із резервної копії"
+
+#: addon\globalPlugins\zBackup\__init__.py:322
+msgid "&Desmontar unidades virtuales"
+msgstr "&Демонтувати віртуальні диски"
+
+#: addon\globalPlugins\zBackup\__init__.py:324
+msgid "&Ejecutar la aplicación Drive Snapshot"
+msgstr "&Запустити програму Drive Snapshot"
+
+#: addon\globalPlugins\zBackup\__init__.py:332
+msgid ""
+"*** ADVERTENCIA ***\n"
+"\n"
+"A continuación se le va a pedir que elija un archivo *.sna que pertenece a "
+"una copia de seguridad.\n"
+"\n"
+"Cuando lo seleccione se le pedirá permisos de administrador, el ordenador se "
+"reiniciara y se restaurara la copia de seguridad.\n"
+"\n"
+"Después de pedirle permisos de Administrador quedara una ventana de consola "
+"la cual cuando presionemos cualquier tecla se reiniciara y dará comienzo la "
+"copia de seguridad.\n"
+"\n"
+"Es conveniente que tenga todas las aplicaciones cerradas o cuando Windows se "
+"lo solicite le diga finalizar todo.\n"
+"\n"
+"Tenga en cuenta que el proceso no puede cancelarse y si acepta debe mantener "
+"el ordenador con batería suficiente, mejor enchufado a la corriente "
+"eléctrica y esperar a que Windows se reinicie ya con la copia restaurada.\n"
+"\n"
+"Es conveniente tener en la pantalla de inicio de Windows activado el lector "
+"de pantalla para que nos avise que inicio.\n"
+"\n"
+"La acción que transcurre entre el reinicio siguiente y el inicio de Windows "
+"no es accesible, pero no tiene que interactuar para nada con el ordenador.\n"
+"\n"
+"Si lo desea y tiene alguna aplicación móvil de OCR puede ir mirando de "
+"capturar alguna información que le indique el porcentaje de la restauración, "
+"sobre la esquina inferior derecha suele aparecer el porcentaje que lleva "
+"restaurado.\n"
+"\n"
+"Le recuerdo que el autor del complemento queda exento de cualquier problema "
+"que pueda causar una mala restauración.\n"
+"\n"
+"¿Desea continuar?"
+msgstr ""
+"*** УВАГА ***\n"
+"\n"
+"Вам буде запропоновано вибрати файл *.sna, який належить до резервної "
+"копії.\n"
+"\n"
+"Коли ви виберете його, у вас буде запитано дозвіл адміністратора, комп’ютер "
+"перезавантажиться, а резервну копію буде відновлено.\n"
+"\n"
+"Після запиту прав адміністратора з'явиться вікно консолі, а при натисканні "
+"будь-якої клавіші відбудеться перезавантаження та почнеться резервне "
+"копіювання.\n"
+"\n"
+"Рекомендується, щоб усі програми були закриті або, коли Windows запропонує "
+"завершити роботу всіх додатків, погодитись.\n"
+"\n"
+"Зверніть увагу, що процес не можна скасувати, і якщо ви погоджуєтеся, то "
+"повинні тримати комп'ютер з достатнім зарядом батареї, в ідеалі - "
+"підключеним до мережі, і чекати, поки Windows перезавантажиться з "
+"відновленою копією.\n"
+"\n"
+"Зручно коли програму зчитування з екрана активовано на початковому екрані "
+"Windows, щоб вона сповіщала нас про запуск.\n"
+"\n"
+"Дія між наступним перезавантаженням і запуском Windows недоступна, але під "
+"час цього не обов'язково взаємодіяти з комп'ютером.\n"
+"\n"
+"Якщо ви хочете і у вас є мобільний додаток OCR, ви можете спробувати "
+"захопити деяку інформацію, яка вкаже відсоток відновлення, у правому "
+"нижньому кутку ви зазвичай побачите відсоток, який було відновлено.\n"
+"\n"
+"Автор додатка не несе жодної відповідальності за проблеми, які можуть "
+"виникнути під час відновлення.\n"
+"\n"
+"Ви хочете продовжити?"
+
+#: addon\globalPlugins\zBackup\__init__.py:357
+#: addon\globalPlugins\zBackup\__init__.py:616
+msgid "Archivo copia de seguridad (*.sna)|*.sna"
+msgstr "Файл резервної копії (*.sna)|*.sna"
+
+#: addon\globalPlugins\zBackup\__init__.py:358
+#: addon\globalPlugins\zBackup\__init__.py:617
+msgid "Seleccione un archivo de copia de seguridad"
+msgstr "Виберіть файл резервної копії"
+
+#: addon\globalPlugins\zBackup\__init__.py:364
+msgid ""
+"No puede restaurar una copia de seguridad desde la partición de sistema.\n"
+"\n"
+"Mueva la copia de seguridad a otra partición o un medio externo."
+msgstr ""
+"Ви не можете відновити резервну копію із системного розділу.\n"
+"\n"
+"Перемістіть резервну копію у інший розділ,або на зовнішній носій."
+
+#: addon\globalPlugins\zBackup\__init__.py:367
+#: addon\globalPlugins\zBackup\__init__.py:422
+#: addon\globalPlugins\zBackup\__init__.py:442
+#: addon\globalPlugins\zBackup\__init__.py:458
+#: addon\globalPlugins\zBackup\__init__.py:472
+#: addon\globalPlugins\zBackup\__init__.py:486
+#: addon\globalPlugins\zBackup\__init__.py:592
+#: addon\globalPlugins\zBackup\__init__.py:602
+msgid "Error"
+msgstr "Помилка"
+
+#: addon\globalPlugins\zBackup\__init__.py:393
+msgid ""
+"Se va a proceder a desmontar todas las unidades virtuales.\n"
+"\n"
+"Se le pedirá permisos de Administrador para realizar la acción.\n"
+"\n"
+"¿Desea continuar?"
+msgstr ""
+"Усі віртуальні диски будуть демонтовані.\n"
+"\n"
+"Вам буде запропоновано надати права адміністратора для виконання цієї дії.\n"
+"\n"
+"Ви хочете продовжити?"
+
+#: addon\globalPlugins\zBackup\__init__.py:412
+msgid "Seleccione un directorio:"
+msgstr "Виберіть каталог:"
+
+#: addon\globalPlugins\zBackup\__init__.py:417
+msgid ""
+"No puede guardar la copia de seguridad en la ubicación que eligió.\n"
+"\n"
+"{}\n"
+"\n"
+"La copia de seguridad tiene que guardarse en una ubicación distinta a la "
+"partición de sistema ya sea otra partición u otro disco."
+msgstr ""
+"Ви не можете зберегти резервну копію у вибраному вами місці.\n"
+"\n"
+"{}\n"
+"\n"
+"Резервна копія повинна бути збережена не в системному - а в іншому розділі "
+"або на іншому диску."
+
+#: addon\globalPlugins\zBackup\__init__.py:430
+msgid ""
+"La ubicación que eligió no tiene espacio suficiente para guardar la copia de "
+"seguridad.\n"
+"\n"
+"{}\n"
+"\n"
+"La comprobación del tamaño se hace del total de la partición de sistema.\n"
+"\n"
+"Al hacer la copia de seguridad luego se comprime y queda la mitad "
+"aproximadamente, pero es necesario reservar el tamaño original para "
+"imprevistos de compresión.\n"
+"\n"
+"* Tamaño partición sistema: {}\n"
+"* Tamaño libre destino: {}\n"
+"\n"
+"Por favor elija otra ubicación con más espacio o si tiene copias de "
+"seguridad antiguas borre alguna."
+msgstr ""
+"У вибраному вами місці недостатньо місця для збереження резервної копії.\n"
+"\n"
+"{}\n"
+"\n"
+"Перевірка розміру виконується для всього системного розділу.\n"
+"\n"
+"Коли створюється резервна копія, вона стискається, і залишається приблизно "
+"половина вихідного розміру, але необхідно зарезервувати вихідний розмір на "
+"випадок непередбачуваного стиснення.\n"
+"\n"
+"* Розмір системного розділу: {}\n"
+"* Місце збереження: Вільне місце: {}\n"
+"\n"
+"Будь ласка, виберіть інше місце з більшим обсягом пам'яті або, якщо у вас є "
+"старі резервні копії, видаліть їх."
+
+#: addon\globalPlugins\zBackup\__init__.py:453
+msgid ""
+"El campo del directorio está vacío.\n"
+"\n"
+"Este campo es obligatorio ya que será donde se guarde la copia de "
+"seguridad.\n"
+"\n"
+"Seleccione un directorio para poder continuar."
+msgstr ""
+"Поле каталогу порожнє.\n"
+"\n"
+"Необхідно вказати місце, куди буде збережено файл резервної копії.\n"
+"\n"
+"Будь ласка, виберіть каталог, щоб продовжити."
+
+#: addon\globalPlugins\zBackup\__init__.py:463
+msgid ""
+"El campo de nombre para la copia de seguridad  es obligatorio.\n"
+"\n"
+"Dicho campo es necesario para crear el subdirectorio y la estructura de "
+"archivos en.\n"
+"\n"
+"{}\n"
+"\n"
+"Además este campo nos valdrá para identificar nuestra copia de seguridad.\n"
+"\n"
+"Introduzca un nombre para poder continuar."
+msgstr ""
+"Поле імені для резервної копії є обов’язковим.\n"
+"\n"
+"Це поле потрібне для створення підкаталогу та структури файлів у .\n"
+"\n"
+"{}\n"
+"\n"
+"Крім того, це поле також використовуватиметься для ідентифікації нашої "
+"резервної копії.\n"
+"\n"
+"Введіть ім'я, щоб продовжити."
+
+#: addon\globalPlugins\zBackup\__init__.py:477
+msgid ""
+"El nombre para la copia de seguridad contiene caracteres no permitidos.\n"
+"\n"
+"Los siguientes caracteres no pueden ser usados, utilice una revisión virtual "
+"para verlos:\n"
+"\n"
+"\\ / : * ? \" < > |\n"
+"\n"
+"Además por seguridad en las restauraciones se a omitido el poder poner "
+"espacios por lo que le recomiendo los sustituya por guiones o guiones "
+"bajos.\n"
+"\n"
+"Modifique el Nombre para la copia de seguridad para continuar."
+msgstr ""
+"Ім'я резервної копії містить недопустимі символи.\n"
+"\n"
+"Наступні символи не можна використовувати, скористайтеся віртуальним "
+"оглядом, щоб побачити їх:\n"
+"\n"
+"\\ / : * ? \" < > |\n"
+"\n"
+"Крім того, для безпеки резервних копій заборонена можливість введення "
+"пробілів, тому рекомендується замінити їх дефісами або символами "
+"підкреслення.\n"
+"\n"
+"Змініть Ім'я, щоб продовжити резервне копіювання."
+
+#: addon\globalPlugins\zBackup\__init__.py:490
+msgid ""
+"A continuación se le solicitara permisos de Administrador para poder hacer "
+"la copia de seguridad.\n"
+"\n"
+"Una vez concedidos se abrirá una ventana con el progreso de la copia.\n"
+"\n"
+"Cuando el proceso termine se cerrara la ventana y le saldrá información si "
+"la copia fue exitosa o no.\n"
+"\n"
+"¿Desea empezar la copia de seguridad?"
+msgstr ""
+"Далі вам буде запропоновано надати права адміністратора для створення "
+"резервної копії.\n"
+"\n"
+"Після надання прав відкриється вікно з перебігом копіювання.\n"
+"\n"
+"Після завершення процесу вікно закриється, і ви отримаєте інформацію про те, "
+"чи було копіювання успішним.\n"
+"\n"
+"Бажаєте розпочати резервне копіювання?"
+
+#: addon\globalPlugins\zBackup\__init__.py:530
+msgid "Montar imagen de copia de seguridad como unidad virtual"
+msgstr "Змонтуйте образ резервної копії як віртуальний диск"
+
+#: addon\globalPlugins\zBackup\__init__.py:539
+msgid "Seleccione una &unidad de disco donde montar la imagen:"
+msgstr "Виберіть &диск, на який буде змонтовано образ:"
+
+#: addon\globalPlugins\zBackup\__init__.py:545
+msgid "Seleccione un archivo &de copia de seguridad:"
+msgstr "Виберіть резервну копію &файл:"
+
+#: addon\globalPlugins\zBackup\__init__.py:553
+msgid "&Seleccionar copia de seguridad"
+msgstr "&Вибрати файл резервної копії"
+
+#: addon\globalPlugins\zBackup\__init__.py:562
+msgid "&Cancelar"
+msgstr "&Скасувати"
+
+#: addon\globalPlugins\zBackup\__init__.py:591
+msgid "Tiene que seleccionar una unidad para poder continuar"
+msgstr "Щоб продовжити, потрібно вибрати диск"
+
+#: addon\globalPlugins\zBackup\__init__.py:597
+msgid ""
+"El campo del fichero de copia de seguridad está vacío.\n"
+"\n"
+"Este campo es obligatorio ya que es necesario tener la ruta de una copia de "
+"seguridad para montar.\n"
+"\n"
+"Seleccione un fichero para poder continuar."
+msgstr ""
+"Поле файлу резервної копії порожнє.\n"
+"\n"
+"Це поле є обов’язковим, оскільки необхідно вказати адресу до резервної копії "
+"для монтування.\n"
+"\n"
+"Виберіть файл, щоб продовжити."
+
+#: addon\globalPlugins\zBackup\__init__.py:656
+msgid ""
+"Se completo la copia de seguridad correctamente en la ubicación:\n"
+"\n"
+"{}\n"
+"\n"
+"Le aconsejo guarde correctamente dicho directorio por si necesitara "
+"restaurar."
+msgstr ""
+"Резервне копіювання успішно завершено за адресою:\n"
+"\n"
+"{}\n"
+"\n"
+"Рекомендується зберегти цей каталог на випадок, якщо знадобиться відновлення."
+
+#: addon\globalPlugins\zBackup\__init__.py:661
+#: addon\globalPlugins\zBackup\__init__.py:796
+msgid "Información"
+msgstr "Інформація"
+
+#: addon\globalPlugins\zBackup\__init__.py:670
+#: addon\globalPlugins\zBackup\__init__.py:716
+#: addon\globalPlugins\zBackup\__init__.py:763
+#: addon\globalPlugins\zBackup\__init__.py:800
+msgid ""
+"Algo salió mal. Al usar una aplicación externa no puedo dar más información "
+"del error.\n"
+"\n"
+"Pero se guardo un log para que pueda revisarlo.\n"
+"\n"
+"¿Desea ver el log de error?"
+msgstr ""
+"Щось пішло не так. Неможливо отримати доступ до детальної інформації, "
+"оскільки використовується зовнішній додаток.\n"
+"\n"
+"Але журнал було збережено, щоб ви могли його переглянути.\n"
+"\n"
+"Бажаєте переглянути журнал помилок?"
+
+#: addon\globalPlugins\zBackup\__init__.py:682
+#: addon\globalPlugins\zBackup\__init__.py:684
+#: addon\globalPlugins\zBackup\__init__.py:725
+#: addon\globalPlugins\zBackup\__init__.py:772
+#: addon\globalPlugins\zBackup\__init__.py:809
+msgid "Log de error"
+msgstr "Журнал помилок"
+
+#: addon\globalPlugins\zBackup\__init__.py:749
+msgid ""
+"Se monto correctamente la imagen.\n"
+"\n"
+"¿Desea abrir el explorador de archivos en la raíz de la unidad {}?"
+msgstr ""
+"Образ успішно змонтовано.\n"
+"\n"
+"Ви хочете відкрити провідник файлів у корені диска {}?"
+
+#: addon\globalPlugins\zBackup\__init__.py:795
+msgid "Se desmontaron correctamente todas las imágenes."
+msgstr "Усі образи було успішно демонтовано."
