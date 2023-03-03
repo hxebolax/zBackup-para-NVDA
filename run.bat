@@ -2,4 +2,4 @@
 @echo off
 scons --clean
 scons
-zBackup-0.3.nvda-addon
+zBackup-0.3.1.nvda-addon
